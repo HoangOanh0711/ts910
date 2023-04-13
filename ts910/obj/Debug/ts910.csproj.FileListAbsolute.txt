@@ -1,0 +1,11 @@
+D:\Project\c#\ts910\ts910\bin\Debug\ts910.exe.config
+D:\Project\c#\ts910\ts910\bin\Debug\ts910.exe
+D:\Project\c#\ts910\ts910\bin\Debug\ts910.pdb
+D:\Project\c#\ts910\ts910\bin\Debug\Guna.UI2.dll
+D:\Project\c#\ts910\ts910\obj\Debug\ts910.csproj.AssemblyReference.cache
+D:\Project\c#\ts910\ts910\obj\Debug\ts910.Properties.Resources.resources
+D:\Project\c#\ts910\ts910\obj\Debug\ts910.csproj.GenerateResource.cache
+D:\Project\c#\ts910\ts910\obj\Debug\ts910.csproj.CoreCompileInputs.cache
+D:\Project\c#\ts910\ts910\obj\Debug\ts910.csproj.CopyComplete
+D:\Project\c#\ts910\ts910\obj\Debug\ts910.exe
+D:\Project\c#\ts910\ts910\obj\Debug\ts910.pdb
