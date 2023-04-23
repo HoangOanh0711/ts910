@@ -44,19 +44,21 @@ namespace ts910
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.footer1 = new ts910.Footer();
-            this.header1 = new ts910.Header();
-            this.footer2 = new ts910.Footer();
             this.contact1 = new ts910.Contact();
+            this.footer2 = new ts910.Footer();
+            this.header1 = new ts910.Header();
+            this.footer1 = new ts910.Footer();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.guna2Panel1.BorderRadius = 100;
+            this.guna2Panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel1.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Panel1.BorderRadius = 30;
             this.guna2Panel1.BorderThickness = 1;
             this.guna2Panel1.Controls.Add(this.guna2ComboBox2);
             this.guna2Panel1.Controls.Add(this.guna2TextBox5);
@@ -71,12 +73,12 @@ namespace ts910
             this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Controls.Add(this.guna2ComboBox1);
             this.guna2Panel1.Controls.Add(this.label1);
+            this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
             this.guna2Panel1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Panel1.Location = new System.Drawing.Point(13, 268);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Panel1.Location = new System.Drawing.Point(33, 412);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Padding = new System.Windows.Forms.Padding(15, 16, 15, 16);
-            this.guna2Panel1.Size = new System.Drawing.Size(385, 431);
+            this.guna2Panel1.Padding = new System.Windows.Forms.Padding(22, 25, 22, 25);
+            this.guna2Panel1.Size = new System.Drawing.Size(549, 663);
             this.guna2Panel1.TabIndex = 3;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
@@ -107,10 +109,9 @@ namespace ts910
             "Tin Học",
             "Toán Học",
             "Vật Lý"});
-            this.guna2ComboBox2.Location = new System.Drawing.Point(17, 369);
-            this.guna2ComboBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2ComboBox2.Location = new System.Drawing.Point(26, 568);
             this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.Size = new System.Drawing.Size(196, 42);
+            this.guna2ComboBox2.Size = new System.Drawing.Size(292, 42);
             this.guna2ComboBox2.TabIndex = 13;
             // 
             // guna2TextBox5
@@ -126,21 +127,20 @@ namespace ts910
             this.guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox5.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.Location = new System.Drawing.Point(232, 371);
-            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.guna2TextBox5.Location = new System.Drawing.Point(348, 571);
+            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.guna2TextBox5.Name = "guna2TextBox5";
             this.guna2TextBox5.PasswordChar = '\0';
             this.guna2TextBox5.PlaceholderText = "";
             this.guna2TextBox5.SelectedText = "";
-            this.guna2TextBox5.Size = new System.Drawing.Size(113, 42);
+            this.guna2TextBox5.Size = new System.Drawing.Size(170, 65);
             this.guna2TextBox5.TabIndex = 12;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(244, 349);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(366, 537);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(82, 17);
             this.label7.TabIndex = 11;
@@ -150,8 +150,7 @@ namespace ts910
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(29, 349);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(44, 537);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(86, 17);
             this.label6.TabIndex = 9;
@@ -170,21 +169,20 @@ namespace ts910
             this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox3.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(17, 299);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.guna2TextBox3.Location = new System.Drawing.Point(26, 460);
+            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.guna2TextBox3.Name = "guna2TextBox3";
             this.guna2TextBox3.PasswordChar = '\0';
             this.guna2TextBox3.PlaceholderText = "";
             this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(161, 42);
+            this.guna2TextBox3.Size = new System.Drawing.Size(242, 65);
             this.guna2TextBox3.TabIndex = 8;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(29, 279);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(44, 429);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(120, 17);
             this.label5.TabIndex = 7;
@@ -203,21 +201,20 @@ namespace ts910
             this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(17, 227);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.guna2TextBox2.Location = new System.Drawing.Point(26, 349);
+            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderText = "";
             this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(161, 42);
+            this.guna2TextBox2.Size = new System.Drawing.Size(242, 65);
             this.guna2TextBox2.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(29, 207);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(44, 318);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 17);
             this.label4.TabIndex = 5;
@@ -236,21 +233,20 @@ namespace ts910
             this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(17, 155);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.guna2TextBox1.Location = new System.Drawing.Point(26, 238);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(161, 42);
+            this.guna2TextBox1.Size = new System.Drawing.Size(242, 65);
             this.guna2TextBox1.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(29, 135);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(44, 208);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 17);
             this.label3.TabIndex = 3;
@@ -260,8 +256,7 @@ namespace ts910
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(29, 92);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(44, 142);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(298, 38);
             this.label2.TabIndex = 2;
@@ -285,18 +280,16 @@ namespace ts910
             "Trường thường",
             "Trường chuyên",
             "Tích hợp"});
-            this.guna2ComboBox1.Location = new System.Drawing.Point(17, 39);
-            this.guna2ComboBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2ComboBox1.Location = new System.Drawing.Point(26, 60);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(328, 42);
+            this.guna2ComboBox1.Size = new System.Drawing.Size(490, 42);
             this.guna2ComboBox1.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(29, 20);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(44, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(74, 17);
             this.label1.TabIndex = 0;
@@ -308,26 +301,34 @@ namespace ts910
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::ts910.Properties.Resources.logobanner;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 95);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(8, 146);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(416, 182);
+            this.pictureBox1.Size = new System.Drawing.Size(582, 280);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // footer1
+            // contact1
             // 
-            this.footer1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.contact1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.footer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(63)))));
-            this.footer1.Location = new System.Drawing.Point(14, 5410);
-            this.footer1.Margin = new System.Windows.Forms.Padding(2);
-            this.footer1.Name = "footer1";
-            this.footer1.Padding = new System.Windows.Forms.Padding(15, 32, 15, 32);
-            this.footer1.Size = new System.Drawing.Size(319, 342);
-            this.footer1.TabIndex = 5;
+            this.contact1.Location = new System.Drawing.Point(5, 1125);
+            this.contact1.Name = "contact1";
+            this.contact1.Padding = new System.Windows.Forms.Padding(22, 0, 22, 0);
+            this.contact1.Size = new System.Drawing.Size(606, 537);
+            this.contact1.TabIndex = 9;
+            // 
+            // footer2
+            // 
+            this.footer2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.footer2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(63)))));
+            this.footer2.Location = new System.Drawing.Point(0, 1726);
+            this.footer2.Name = "footer2";
+            this.footer2.Padding = new System.Windows.Forms.Padding(22, 49, 22, 49);
+            this.footer2.Size = new System.Drawing.Size(622, 615);
+            this.footer2.TabIndex = 8;
             // 
             // header1
             // 
@@ -335,38 +336,29 @@ namespace ts910
             | System.Windows.Forms.AnchorStyles.Right)));
             this.header1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(157)))), ((int)(((byte)(254)))));
             this.header1.Location = new System.Drawing.Point(0, 0);
-            this.header1.Margin = new System.Windows.Forms.Padding(2);
             this.header1.Name = "header1";
-            this.header1.Size = new System.Drawing.Size(416, 96);
+            this.header1.Size = new System.Drawing.Size(619, 148);
             this.header1.TabIndex = 7;
             // 
-            // footer2
+            // footer1
             // 
-            this.footer2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(63)))));
-            this.footer2.Location = new System.Drawing.Point(0, 1122);
-            this.footer2.Margin = new System.Windows.Forms.Padding(2);
-            this.footer2.Name = "footer2";
-            this.footer2.Padding = new System.Windows.Forms.Padding(15, 32, 15, 32);
-            this.footer2.Size = new System.Drawing.Size(414, 400);
-            this.footer2.TabIndex = 8;
-            // 
-            // contact1
-            // 
-            this.contact1.Location = new System.Drawing.Point(2, 731);
-            this.contact1.Margin = new System.Windows.Forms.Padding(2);
-            this.contact1.Name = "contact1";
-            this.contact1.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.contact1.Size = new System.Drawing.Size(414, 349);
-            this.contact1.TabIndex = 9;
+            this.footer1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.footer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(63)))));
+            this.footer1.Location = new System.Drawing.Point(29, 9564);
+            this.footer1.Name = "footer1";
+            this.footer1.Padding = new System.Windows.Forms.Padding(22, 49, 22, 49);
+            this.footer1.Size = new System.Drawing.Size(461, 526);
+            this.footer1.TabIndex = 5;
             // 
             // Home
             // 
             this.AllowDrop = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(186)))), ((int)(((byte)(241)))));
-            this.ClientSize = new System.Drawing.Size(414, 736);
+            this.ClientSize = new System.Drawing.Size(621, 1100);
             this.Controls.Add(this.contact1);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.footer2);
@@ -374,7 +366,6 @@ namespace ts910
             this.Controls.Add(this.footer1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "x";
