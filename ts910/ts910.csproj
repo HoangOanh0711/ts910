@@ -52,14 +52,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dang_ky.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dang_ky.Designer.cs">
+      <DependentUpon>dang_ky.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dang_nhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dang_nhap.Designer.cs">
+      <DependentUpon>dang_nhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="popup_tu_van.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="popup_tu_van.Designer.cs">
+      <DependentUpon>popup_tu_van.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="dang_nhap.resx">
+      <DependentUpon>dang_nhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -68,6 +89,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -82,6 +104,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
