@@ -58,6 +58,18 @@
     <Compile Include="Contact.Designer.cs">
       <DependentUpon>Contact.cs</DependentUpon>
     </Compile>
+    <Compile Include="dang_ky.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dang_ky.Designer.cs">
+      <DependentUpon>dang_ky.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dang_nhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dang_nhap.Designer.cs">
+      <DependentUpon>dang_nhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="Footer.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -76,10 +88,22 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="popup_tu_van.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="popup_tu_van.Designer.cs">
+      <DependentUpon>popup_tu_van.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Contact.resx">
       <DependentUpon>Contact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dang_ky.resx">
+      <DependentUpon>dang_ky.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dang_nhap.resx">
+      <DependentUpon>dang_nhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Footer.resx">
       <DependentUpon>Footer.cs</DependentUpon>
@@ -89,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="popup_tu_van.resx">
+      <DependentUpon>popup_tu_van.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -125,6 +152,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\logobanner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
