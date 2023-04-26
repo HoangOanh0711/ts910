@@ -78,8 +78,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="dang_ky.resx">
+      <DependentUpon>dang_ky.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="dang_nhap.resx">
       <DependentUpon>dang_nhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="popup_tu_van.resx">
+      <DependentUpon>popup_tu_van.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
