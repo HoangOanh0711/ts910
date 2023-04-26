@@ -16,7 +16,7 @@ namespace ts910
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new popup_tu_van());
+            Application.Run(new Home());
         }
     }
 }

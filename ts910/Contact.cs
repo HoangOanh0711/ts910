@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ts910
 {
-    public partial class Form1 : Form
+    public partial class Contact : UserControl
     {
-        public Form1()
+        public Contact()
         {
             InitializeComponent();
         }
