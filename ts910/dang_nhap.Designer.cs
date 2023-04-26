@@ -52,6 +52,7 @@
             this.label7.Size = new System.Drawing.Size(137, 22);
             this.label7.TabIndex = 31;
             this.label7.Text = "Đăng ký ngay";
+            this.label7.Click += new System.EventHandler(this.label7_Click_1);
             // 
             // label8
             // 
@@ -191,6 +192,7 @@
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox2.TabIndex = 23;
             this.guna2PictureBox2.TabStop = false;
+            this.guna2PictureBox2.Click += new System.EventHandler(this.guna2PictureBox2_Click_1);
             // 
             // label12
             // 
@@ -225,7 +227,7 @@
             this.Controls.Add(this.label12);
             this.Font = new System.Drawing.Font("Arial", 15.75F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "dang_nhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();

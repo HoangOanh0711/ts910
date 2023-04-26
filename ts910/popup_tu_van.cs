@@ -31,10 +31,15 @@ namespace ts910
 
         }
 
-        private void guna2PictureBox2_Click(object sender, EventArgs e)
+        private void guna2PictureBox2_Click_1(object sender, EventArgs e)
         {
             this.Hide();
             this.Close();
+        }
+
+        private void guna2GradientButton2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

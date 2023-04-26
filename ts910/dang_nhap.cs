@@ -32,7 +32,7 @@ namespace ts910
 
         }
 
-        private void label7_Click(object sender, EventArgs e)
+        private void label7_Click_1(object sender, EventArgs e)
         {
             this.Hide();
             dang_ky dangky = new dang_ky();
@@ -40,11 +40,10 @@ namespace ts910
             this.Close();
         }
 
-        private void guna2PictureBox2_Click(object sender, EventArgs e)
+        private void guna2PictureBox2_Click_1(object sender, EventArgs e)
         {
             this.Hide();
             this.Close();
-
         }
     }
 }

@@ -32,11 +32,18 @@ namespace ts910
 
         }
 
-        private void label10_Click(object sender, EventArgs e)
+        private void label10_Click_1(object sender, EventArgs e)
         {
             this.Hide();
             dang_nhap dangnhap = new dang_nhap();
             dangnhap.ShowDialog();
+            this.Close();
+        }
+
+        private void guna2PictureBox2_Click(object sender, EventArgs e)
+        {
+
+            this.Hide();
             this.Close();
         }
     }

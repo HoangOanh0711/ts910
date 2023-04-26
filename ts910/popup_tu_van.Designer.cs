@@ -76,6 +76,7 @@
             this.guna2GradientButton2.Size = new System.Drawing.Size(239, 63);
             this.guna2GradientButton2.TabIndex = 46;
             this.guna2GradientButton2.Text = "GỬI NGAY";
+            this.guna2GradientButton2.Click += new System.EventHandler(this.guna2GradientButton2_Click);
             // 
             // guna2TextBox5
             // 
@@ -100,7 +101,7 @@
             this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2TextBox5.Name = "guna2TextBox5";
             this.guna2TextBox5.PasswordChar = '\0';
-            this.guna2TextBox5.PlaceholderText = "";
+            this.guna2TextBox5.PlaceholderText = "Nhập câu hỏi của bạn...";
             this.guna2TextBox5.SelectedText = "";
             this.guna2TextBox5.Size = new System.Drawing.Size(453, 139);
             this.guna2TextBox5.TabIndex = 45;
@@ -128,7 +129,7 @@
             this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2TextBox6.Name = "guna2TextBox6";
             this.guna2TextBox6.PasswordChar = '\0';
-            this.guna2TextBox6.PlaceholderText = "abc";
+            this.guna2TextBox6.PlaceholderText = "Họ và tên";
             this.guna2TextBox6.SelectedText = "";
             this.guna2TextBox6.Size = new System.Drawing.Size(453, 49);
             this.guna2TextBox6.TabIndex = 44;
@@ -156,7 +157,7 @@
             this.guna2TextBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2TextBox7.Name = "guna2TextBox7";
             this.guna2TextBox7.PasswordChar = '\0';
-            this.guna2TextBox7.PlaceholderText = "";
+            this.guna2TextBox7.PlaceholderText = "Số điện thoại";
             this.guna2TextBox7.SelectedText = "";
             this.guna2TextBox7.Size = new System.Drawing.Size(453, 49);
             this.guna2TextBox7.TabIndex = 43;
@@ -184,7 +185,7 @@
             this.guna2TextBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2TextBox8.Name = "guna2TextBox8";
             this.guna2TextBox8.PasswordChar = '\0';
-            this.guna2TextBox8.PlaceholderText = "";
+            this.guna2TextBox8.PlaceholderText = "Email";
             this.guna2TextBox8.SelectedText = "";
             this.guna2TextBox8.Size = new System.Drawing.Size(453, 49);
             this.guna2TextBox8.TabIndex = 42;
@@ -217,6 +218,7 @@
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox2.TabIndex = 48;
             this.guna2PictureBox2.TabStop = false;
+            this.guna2PictureBox2.Click += new System.EventHandler(this.guna2PictureBox2_Click_1);
             // 
             // popup_tu_van
             // 
@@ -234,7 +236,7 @@
             this.Controls.Add(this.label14);
             this.Font = new System.Drawing.Font("Arial", 15.75F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "popup_tu_van";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "popup_tu_van";
