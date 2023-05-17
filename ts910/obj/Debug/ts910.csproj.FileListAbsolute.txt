@@ -47,3 +47,4 @@ G:\Oanhhh\c#\ts910\ts910\obj\Debug\ts910.pdb
 G:\Oanhhh\c#\ts910\ts910\obj\Debug\ts910.News.News_in_Home.resources
 G:\Oanhhh\c#\ts910\ts910\obj\Debug\ts910.News.News_CardView.resources
 G:\Oanhhh\c#\ts910\ts910\obj\Debug\ts910.News.News_ListView.resources
+G:\Oanhhh\c#\ts910\ts910\obj\Debug\ts910.csproj.ResolveComReference.cache

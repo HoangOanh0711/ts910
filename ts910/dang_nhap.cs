@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Office.Interop.Excel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -6,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
+using Excel = Microsoft.Office.Interop.Excel.Application;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -13,6 +15,8 @@ namespace ts910
 {
     public partial class dang_nhap : Form
     {
+        string filePath = "C:\\Users\\Acer\\Documents\\Zalo Received Files\\TS10.xlsx";
+
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
         (
@@ -38,12 +42,56 @@ namespace ts910
             this.Close();
         }
 
-        private void label7_Click(object sender, EventArgs e)
+
+        private void btn_dangky_Click(object sender, EventArgs e)
         {
             this.Hide();
             dang_ky dangky = new dang_ky();
             dangky.ShowDialog();
             this.Close();
+        }
+
+        private void btn_dangnhap_Click(object sender, EventArgs e)
+        {
+            if (tb_email.Text == "" || tb_mk.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                Excel excel = new Excel();
+                Workbook wb = excel.Workbooks.Open(filePath);
+                Worksheet ws = wb.Worksheets["Tài khoản"];
+
+                for (int row = 2; row <= ws.UsedRange.Rows.Count; ++row)//đọc row hiện có trong Excel
+                {
+                    Range db_email = ws.Range[$"C{row}"];
+                    string emailValue = db_email.Text;
+
+                    if (tb_email.Text.Equals(emailValue))
+                    {
+                        Range db_mk = ws.Range[$"F{row}"];
+                        string mkValue = db_mk.Text;
+                        if (tb_mk.Text.Equals(mkValue))
+                        {
+                            wb.Close();
+                            MessageBox.Show("Đăng nhập thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            this.Hide();
+                            Home home = new Home();
+                            home.ShowDialog();
+                            this.Close();
+                        }
+                        else
+                        {
+                            wb.Close();
+                            MessageBox.Show("Sai mật khẩu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            return;
+                        }
+                    }
+                }
+                wb.Close();
+                MessageBox.Show("Tài khoản không tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }
