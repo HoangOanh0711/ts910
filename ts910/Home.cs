@@ -45,5 +45,11 @@ namespace ts910
         {
 
         }
+
+        private void guna2PictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            this.Close();
+        }
     }
 }

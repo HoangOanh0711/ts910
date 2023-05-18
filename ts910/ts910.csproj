@@ -52,6 +52,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChatBox\ChatBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChatBox\ChatBox.Designer.cs">
+      <DependentUpon>ChatBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChatBox\uc_chat_hotline.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChatBox\uc_chat_hotline.Designer.cs">
+      <DependentUpon>uc_chat_hotline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChatBox\uc_chat_user.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChatBox\uc_chat_user.Designer.cs">
+      <DependentUpon>uc_chat_user.cs</DependentUpon>
+    </Compile>
     <Compile Include="Contact.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -114,6 +132,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ChatBox\ChatBox.resx">
+      <DependentUpon>ChatBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatBox\uc_chat_hotline.resx">
+      <DependentUpon>uc_chat_hotline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatBox\uc_chat_user.resx">
+      <DependentUpon>uc_chat_user.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Contact.resx">
       <DependentUpon>Contact.cs</DependentUpon>
     </EmbeddedResource>
@@ -220,6 +247,9 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

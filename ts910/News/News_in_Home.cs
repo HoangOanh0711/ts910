@@ -12,6 +12,8 @@ namespace ts910.News
 {
     public partial class News_in_Home : UserControl
     {
+        public event EventHandler Click;
+
         public News_in_Home()
         {
             InitializeComponent();
@@ -47,6 +49,8 @@ namespace ts910.News
 
         private void label2_Click(object sender, EventArgs e)
         {
+            this.ParentForm?.Hide();
+            Click?.Invoke(this, e);
             News_ListView new_ListView = new News_ListView();
             new_ListView.ShowDialog();
         }
