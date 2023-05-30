@@ -19,8 +19,6 @@ namespace ts910
 {
     public partial class dang_ky : Form
     {
-        string filePath = "C:\\Users\\Acer\\Documents\\Zalo Received Files\\TS10.xlsx";
-
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
         (
@@ -55,7 +53,7 @@ namespace ts910
                 if (tb_matkhau.Text == tb_nhaplaimk.Text)
                 {
                     Excel excel = new Excel();
-                    Workbook wb = excel.Workbooks.Open(filePath);
+                    Workbook wb = excel.Workbooks.Open(Program.filePathExcel);
                     Worksheet ws = wb.Worksheets["Tài khoản"];
                     
 
