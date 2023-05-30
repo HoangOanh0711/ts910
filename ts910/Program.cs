@@ -8,7 +8,8 @@ namespace ts910
 {
     static class Program
     {
-        public static string filePathExcel = "G:\\Oanhhh\\c#\\ts910\\ts910\\data.xlsx";
+        //public static string filePathExcel = "G:\\Oanhhh\\c#\\ts910\\ts910\\data.xlsx";
+        public static string filePathExcel = "E:\\STUDY\\C#\\LT\\ts910\\ts910\\data.xlsx";
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
