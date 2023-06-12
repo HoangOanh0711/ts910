@@ -24,6 +24,7 @@ namespace ts910
             int nHeightEllipse // width of ellipse
         );
 
+
         public Home()
         {
             InitializeComponent();
@@ -50,6 +51,43 @@ namespace ts910
         {
             this.Hide();
             this.Close();
+        }
+
+        private void header1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbx_type_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_submit_Click(object sender, EventArgs e)
+        {
+            float math = float.Parse(tb_math.Text);
+            float liter = float.Parse(tb_liter.Text);
+            float eng = float.Parse(tb_english.Text);
+
+
+            if (cbx_type.SelectedIndex == 0) {
+                lb_sum.Text = Convert.ToString(math + liter + eng);
+            }
+            else if (cbx_type.SelectedIndex == 1)
+            {
+                if (cbx_specialSubject.SelectedIndex > 0)
+                {
+                    float special = float.Parse(tb_specialSubject.Text);
+                    lb_sum.Text = Convert.ToString(math + liter + eng + special * 2);
+                }
+                else
+                    MessageBox.Show("Vui lòng chọn môn chuyên", "Lỗi");
+            }
+            else
+            {
+                float special = float.Parse(tb_specialSubject.Text);
+                lb_sum.Text = Convert.ToString(math + liter + eng + special);
+            }
         }
     }
 }

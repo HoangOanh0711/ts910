@@ -47,7 +47,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(178, 59);
+            this.pictureBox1.Size = new System.Drawing.Size(310, 59);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -66,7 +66,7 @@
             this.panel1.Location = new System.Drawing.Point(15, 32);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(384, 336);
+            this.panel1.Size = new System.Drawing.Size(516, 336);
             this.panel1.TabIndex = 1;
             // 
             // label4
@@ -80,10 +80,10 @@
             this.label4.Location = new System.Drawing.Point(2, 243);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(312, 88);
+            this.label4.Size = new System.Drawing.Size(396, 66);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Địa chỉ: Trường Đại học Công nghệ \r\nThông Tin\r\nHotline: 0912345678\r\nWebsite: ts91" +
-    "0@gmail.com\r\n";
+            this.label4.Text = "Địa chỉ: Trường Đại học Công nghệ Thông Tin\r\nHotline: 0912345678\r\nWebsite: ts910@" +
+    "gmail.com\r\n";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label3
@@ -112,9 +112,9 @@
             this.label2.Location = new System.Drawing.Point(2, 203);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(384, 22);
+            this.label2.Size = new System.Drawing.Size(494, 22);
             this.label2.TabIndex = 2;
-            this.label2.Text = "__________________________________";
+            this.label2.Text = "____________________________________________";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
@@ -128,9 +128,9 @@
             this.label1.Location = new System.Drawing.Point(2, 75);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(309, 44);
+            this.label1.Size = new System.Drawing.Size(464, 22);
             this.label1.TabIndex = 1;
-            this.label1.Text = "CÔNG TY TNHH CÔNG NGHỆ VÀ \r\nĐÀO TẠO TS910 ";
+            this.label1.Text = "CÔNG TY TNHH CÔNG NGHỆ VÀ ĐÀO TẠO TS910 ";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Footer
@@ -142,7 +142,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Footer";
             this.Padding = new System.Windows.Forms.Padding(15, 32, 15, 32);
-            this.Size = new System.Drawing.Size(414, 400);
+            this.Size = new System.Drawing.Size(546, 400);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
