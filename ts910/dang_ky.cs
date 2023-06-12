@@ -146,5 +146,10 @@ namespace ts910
             //wb.SaveAs(filePath);      // If you want to save it with another name or in another folder
             wb.Close();
         }
+
+        private void tb_hoten_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

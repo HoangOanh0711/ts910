@@ -80,7 +80,7 @@
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(23, 463);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(219, 29);
+            this.label8.Size = new System.Drawing.Size(270, 35);
             this.label8.TabIndex = 40;
             this.label8.Text = "Nhập lại mật khẩu";
             // 
@@ -109,8 +109,9 @@
             this.tb_hoten.PasswordChar = '\0';
             this.tb_hoten.PlaceholderText = "";
             this.tb_hoten.SelectedText = "";
-            this.tb_hoten.Size = new System.Drawing.Size(471, 49);
+            this.tb_hoten.Size = new System.Drawing.Size(471, 65);
             this.tb_hoten.TabIndex = 39;
+            this.tb_hoten.TextChanged += new System.EventHandler(this.tb_hoten_TextChanged);
             // 
             // label9
             // 
@@ -120,7 +121,7 @@
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(23, 139);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(121, 29);
+            this.label9.Size = new System.Drawing.Size(150, 35);
             this.label9.TabIndex = 38;
             this.label9.Text = "Họ và tên";
             // 
@@ -132,7 +133,7 @@
             this.btn_dangnhap.ForeColor = System.Drawing.Color.White;
             this.btn_dangnhap.Location = new System.Drawing.Point(280, 701);
             this.btn_dangnhap.Name = "btn_dangnhap";
-            this.btn_dangnhap.Size = new System.Drawing.Size(162, 22);
+            this.btn_dangnhap.Size = new System.Drawing.Size(201, 29);
             this.btn_dangnhap.TabIndex = 37;
             this.btn_dangnhap.Text = "Đăng nhập ngay";
             this.btn_dangnhap.Click += new System.EventHandler(this.btn_dangnhap_Click);
@@ -145,7 +146,7 @@
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(97, 701);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(185, 22);
+            this.label11.Size = new System.Drawing.Size(238, 27);
             this.label11.TabIndex = 36;
             this.label11.Text = "Bạn đã có tài khoản?";
             // 
@@ -236,7 +237,7 @@
             this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Location = new System.Drawing.Point(23, 352);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(118, 29);
+            this.label12.Size = new System.Drawing.Size(145, 35);
             this.label12.TabIndex = 32;
             this.label12.Text = "Mật khẩu";
             // 
@@ -248,7 +249,7 @@
             this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(23, 243);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(77, 29);
+            this.label13.Size = new System.Drawing.Size(94, 35);
             this.label13.TabIndex = 31;
             this.label13.Text = "Email";
             // 
@@ -284,7 +285,7 @@
             // 
             // dang_ky
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(114)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(538, 794);

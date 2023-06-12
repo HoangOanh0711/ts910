@@ -37,5 +37,10 @@ namespace ts910
             this.Hide();
             this.Close();
         }
+
+        private void popup_tu_van_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

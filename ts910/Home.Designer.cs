@@ -78,11 +78,11 @@ namespace ts910
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
             this.guna2Panel1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Panel1.Location = new System.Drawing.Point(75, 405);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Panel1.Location = new System.Drawing.Point(100, 498);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Padding = new System.Windows.Forms.Padding(15, 16, 15, 16);
-            this.guna2Panel1.Size = new System.Drawing.Size(373, 497);
+            this.guna2Panel1.Padding = new System.Windows.Forms.Padding(20);
+            this.guna2Panel1.Size = new System.Drawing.Size(459, 612);
             this.guna2Panel1.TabIndex = 3;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
@@ -91,9 +91,10 @@ namespace ts910
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.Font = new System.Drawing.Font("Arial", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(7, 120);
+            this.label8.Location = new System.Drawing.Point(9, 148);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(355, 55);
+            this.label8.Size = new System.Drawing.Size(435, 68);
             this.label8.TabIndex = 14;
             this.label8.Text = "Nhập điểm thí sinh dự đoán đạt được trong kỳ thi tuyển sinh 10:";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -127,10 +128,10 @@ namespace ts910
             "Tin Học",
             "Toán Học",
             "Vật Lý"});
-            this.guna2ComboBox2.Location = new System.Drawing.Point(16, 413);
-            this.guna2ComboBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2ComboBox2.Location = new System.Drawing.Point(21, 508);
+            this.guna2ComboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.Size = new System.Drawing.Size(148, 42);
+            this.guna2ComboBox2.Size = new System.Drawing.Size(158, 42);
             this.guna2ComboBox2.TabIndex = 13;
             // 
             // guna2TextBox5
@@ -148,21 +149,20 @@ namespace ts910
             this.guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox5.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.Location = new System.Drawing.Point(249, 413);
-            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.guna2TextBox5.Location = new System.Drawing.Point(332, 508);
+            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox5.Name = "guna2TextBox5";
             this.guna2TextBox5.PasswordChar = '\0';
             this.guna2TextBox5.PlaceholderText = "";
             this.guna2TextBox5.SelectedText = "";
-            this.guna2TextBox5.Size = new System.Drawing.Size(65, 42);
+            this.guna2TextBox5.Size = new System.Drawing.Size(49, 52);
             this.guna2TextBox5.TabIndex = 12;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(249, 389);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(332, 479);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(115, 22);
             this.label7.TabIndex = 11;
@@ -172,8 +172,7 @@ namespace ts910
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(16, 389);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(21, 479);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(125, 22);
             this.label6.TabIndex = 9;
@@ -194,21 +193,20 @@ namespace ts910
             this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox3.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(16, 313);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.guna2TextBox3.Location = new System.Drawing.Point(21, 385);
+            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox3.Name = "guna2TextBox3";
             this.guna2TextBox3.PasswordChar = '\0';
             this.guna2TextBox3.PlaceholderText = "";
             this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(113, 42);
+            this.guna2TextBox3.Size = new System.Drawing.Size(113, 52);
             this.guna2TextBox3.TabIndex = 8;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(16, 288);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(21, 354);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(169, 22);
             this.label5.TabIndex = 7;
@@ -229,21 +227,20 @@ namespace ts910
             this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(241, 216);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.guna2TextBox2.Location = new System.Drawing.Point(321, 266);
+            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderText = "";
             this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(113, 42);
+            this.guna2TextBox2.Size = new System.Drawing.Size(113, 52);
             this.guna2TextBox2.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(241, 191);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(321, 235);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(108, 22);
             this.label4.TabIndex = 5;
@@ -264,21 +261,20 @@ namespace ts910
             this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(16, 216);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.guna2TextBox1.Location = new System.Drawing.Point(21, 266);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(113, 42);
+            this.guna2TextBox1.Size = new System.Drawing.Size(113, 52);
             this.guna2TextBox1.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(16, 191);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(21, 235);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(115, 22);
             this.label3.TabIndex = 3;
@@ -304,18 +300,17 @@ namespace ts910
             "Trường thường",
             "Trường chuyên",
             "Tích hợp"});
-            this.guna2ComboBox1.Location = new System.Drawing.Point(16, 52);
-            this.guna2ComboBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2ComboBox1.Location = new System.Drawing.Point(21, 64);
+            this.guna2ComboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(335, 42);
+            this.guna2ComboBox1.Size = new System.Drawing.Size(407, 42);
             this.guna2ComboBox1.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(16, 28);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(21, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(108, 22);
             this.label1.TabIndex = 0;
@@ -327,10 +322,10 @@ namespace ts910
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::ts910.Properties.Resources.logobanner;
-            this.pictureBox1.Location = new System.Drawing.Point(50, 183);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(67, 225);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(426, 234);
+            this.pictureBox1.Size = new System.Drawing.Size(530, 288);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -343,9 +338,10 @@ namespace ts910
             this.guna2PictureBox2.FillColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox2.Image = global::ts910.Properties.Resources.close;
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(491, 9);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(617, 11);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(40, 40);
+            this.guna2PictureBox2.Size = new System.Drawing.Size(53, 49);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox2.TabIndex = 24;
             this.guna2PictureBox2.TabStop = false;
@@ -353,30 +349,30 @@ namespace ts910
             // 
             // news_in_Home1
             // 
-            this.news_in_Home1.Location = new System.Drawing.Point(43, 945);
-            this.news_in_Home1.Margin = new System.Windows.Forms.Padding(2);
+            this.news_in_Home1.Location = new System.Drawing.Point(57, 1163);
+            this.news_in_Home1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.news_in_Home1.Name = "news_in_Home1";
-            this.news_in_Home1.Size = new System.Drawing.Size(463, 548);
+            this.news_in_Home1.Size = new System.Drawing.Size(617, 674);
             this.news_in_Home1.TabIndex = 12;
             // 
             // header1
             // 
             this.header1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(157)))), ((int)(((byte)(254)))));
-            this.header1.Location = new System.Drawing.Point(-3, 60);
-            this.header1.Margin = new System.Windows.Forms.Padding(2);
+            this.header1.Location = new System.Drawing.Point(-4, 74);
+            this.header1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.header1.Name = "header1";
-            this.header1.Size = new System.Drawing.Size(550, 96);
+            this.header1.Size = new System.Drawing.Size(733, 118);
             this.header1.TabIndex = 11;
             // 
             // contact1
             // 
             this.contact1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.contact1.Location = new System.Drawing.Point(66, 1551);
+            this.contact1.Location = new System.Drawing.Point(88, 1909);
             this.contact1.Margin = new System.Windows.Forms.Padding(1);
             this.contact1.Name = "contact1";
-            this.contact1.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.contact1.Size = new System.Drawing.Size(392, 366);
+            this.contact1.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.contact1.Size = new System.Drawing.Size(485, 450);
             this.contact1.TabIndex = 9;
             // 
             // footer2
@@ -384,11 +380,11 @@ namespace ts910
             this.footer2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.footer2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(63)))));
-            this.footer2.Location = new System.Drawing.Point(-1, 2003);
+            this.footer2.Location = new System.Drawing.Point(-1, 2465);
             this.footer2.Margin = new System.Windows.Forms.Padding(1);
             this.footer2.Name = "footer2";
-            this.footer2.Padding = new System.Windows.Forms.Padding(15, 32, 15, 32);
-            this.footer2.Size = new System.Drawing.Size(549, 400);
+            this.footer2.Padding = new System.Windows.Forms.Padding(20, 39, 20, 39);
+            this.footer2.Size = new System.Drawing.Size(694, 492);
             this.footer2.TabIndex = 8;
             // 
             // footer1
@@ -396,21 +392,21 @@ namespace ts910
             this.footer1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.footer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(63)))));
-            this.footer1.Location = new System.Drawing.Point(19, 21725);
+            this.footer1.Location = new System.Drawing.Point(25, 30462);
             this.footer1.Margin = new System.Windows.Forms.Padding(1);
             this.footer1.Name = "footer1";
-            this.footer1.Padding = new System.Windows.Forms.Padding(15, 32, 15, 32);
-            this.footer1.Size = new System.Drawing.Size(202, 342);
+            this.footer1.Padding = new System.Windows.Forms.Padding(20, 39, 20, 39);
+            this.footer1.Size = new System.Drawing.Size(231, 421);
             this.footer1.TabIndex = 5;
             // 
             // Home
             // 
             this.AllowDrop = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(186)))), ((int)(((byte)(241)))));
-            this.ClientSize = new System.Drawing.Size(564, 890);
+            this.ClientSize = new System.Drawing.Size(752, 1095);
             this.Controls.Add(this.guna2PictureBox2);
             this.Controls.Add(this.news_in_Home1);
             this.Controls.Add(this.header1);
@@ -420,7 +416,7 @@ namespace ts910
             this.Controls.Add(this.footer1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "x";

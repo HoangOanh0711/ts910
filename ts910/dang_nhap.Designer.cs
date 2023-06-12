@@ -49,7 +49,7 @@
             this.btn_dangky.ForeColor = System.Drawing.Color.White;
             this.btn_dangky.Location = new System.Drawing.Point(299, 551);
             this.btn_dangky.Name = "btn_dangky";
-            this.btn_dangky.Size = new System.Drawing.Size(137, 22);
+            this.btn_dangky.Size = new System.Drawing.Size(169, 29);
             this.btn_dangky.TabIndex = 31;
             this.btn_dangky.Text = "Đăng ký ngay";
             this.btn_dangky.Click += new System.EventHandler(this.btn_dangky_Click);
@@ -62,7 +62,7 @@
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(94, 551);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(207, 22);
+            this.label8.Size = new System.Drawing.Size(267, 27);
             this.label8.TabIndex = 30;
             this.label8.Text = "Bạn chưa có tài khoản?";
             // 
@@ -124,7 +124,7 @@
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(334, 385);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(162, 22);
+            this.label9.Size = new System.Drawing.Size(201, 29);
             this.label9.TabIndex = 27;
             this.label9.Text = "Quên mật khẩu?";
             // 
@@ -164,7 +164,7 @@
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(27, 297);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(118, 29);
+            this.label10.Size = new System.Drawing.Size(145, 35);
             this.label10.TabIndex = 25;
             this.label10.Text = "Mật khẩu";
             // 
@@ -176,7 +176,7 @@
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(27, 173);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(77, 29);
+            this.label11.Size = new System.Drawing.Size(94, 35);
             this.label11.TabIndex = 24;
             this.label11.Text = "Email";
             // 
@@ -212,9 +212,9 @@
             // 
             // dang_nhap
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(114)))), ((int)(((byte)(238)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(207)))), ((int)(((byte)(243)))));
             this.ClientSize = new System.Drawing.Size(538, 653);
             this.Controls.Add(this.btn_dangky);
             this.Controls.Add(this.label8);
