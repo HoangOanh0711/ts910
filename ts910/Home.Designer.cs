@@ -45,13 +45,13 @@ namespace ts910
             this.cbx_type = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lb_sum = new System.Windows.Forms.Label();
+            this.contact1 = new ts910.Contact();
             this.header1 = new ts910.Header();
             this.news_in_Home1 = new ts910.News.News_in_Home();
             this.footer2 = new ts910.Footer();
             this.footer1 = new ts910.Footer();
-            this.contact1 = new ts910.Contact();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lb_sum = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -139,18 +139,9 @@ namespace ts910
             this.cbx_specialSubject.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.cbx_specialSubject.ItemHeight = 44;
             this.cbx_specialSubject.Items.AddRange(new object[] {
-            "Địa Lý",
-            "Hóa Học",
-            "Lịch Sử",
-            "Ngữ Văn",
-            "Sinh học",
-            "Tiếng Anh",
-            "Tiếng Nhật",
-            "Tiếng Pháp",
-            "Tiếng Trung",
-            "Tin Học",
             "Toán Học",
-            "Vật Lý"});
+            "Ngữ Văn",
+            "Tiếng Anh"});
             this.cbx_specialSubject.Location = new System.Drawing.Point(16, 413);
             this.cbx_specialSubject.Margin = new System.Windows.Forms.Padding(2);
             this.cbx_specialSubject.Name = "cbx_specialSubject";
@@ -367,63 +358,11 @@ namespace ts910
             this.pictureBox1.Location = new System.Drawing.Point(0, 97);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(530, 177);
+            this.pictureBox1.Size = new System.Drawing.Size(512, 177);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // header1
-            // 
-            this.header1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.header1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(157)))), ((int)(((byte)(254)))));
-            this.header1.Location = new System.Drawing.Point(0, 0);
-            this.header1.Margin = new System.Windows.Forms.Padding(2);
-            this.header1.Name = "header1";
-            this.header1.Size = new System.Drawing.Size(530, 96);
-            this.header1.TabIndex = 13;
-            // 
-            // news_in_Home1
-            // 
-            this.news_in_Home1.Location = new System.Drawing.Point(36, 870);
-            this.news_in_Home1.Margin = new System.Windows.Forms.Padding(2);
-            this.news_in_Home1.Name = "news_in_Home1";
-            this.news_in_Home1.Size = new System.Drawing.Size(463, 548);
-            this.news_in_Home1.TabIndex = 12;
-            // 
-            // footer2
-            // 
-            this.footer2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.footer2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(63)))));
-            this.footer2.Location = new System.Drawing.Point(0, 1846);
-            this.footer2.Margin = new System.Windows.Forms.Padding(1);
-            this.footer2.Name = "footer2";
-            this.footer2.Padding = new System.Windows.Forms.Padding(15, 32, 15, 32);
-            this.footer2.Size = new System.Drawing.Size(530, 400);
-            this.footer2.TabIndex = 8;
-            // 
-            // footer1
-            // 
-            this.footer1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.footer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(63)))));
-            this.footer1.Location = new System.Drawing.Point(19, 29418);
-            this.footer1.Margin = new System.Windows.Forms.Padding(1);
-            this.footer1.Name = "footer1";
-            this.footer1.Padding = new System.Windows.Forms.Padding(15, 32, 15, 32);
-            this.footer1.Size = new System.Drawing.Size(104, 342);
-            this.footer1.TabIndex = 5;
-            // 
-            // contact1
-            // 
-            this.contact1.Location = new System.Drawing.Point(0, 1450);
-            this.contact1.Margin = new System.Windows.Forms.Padding(2);
-            this.contact1.Name = "contact1";
-            this.contact1.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.contact1.Size = new System.Drawing.Size(546, 333);
-            this.contact1.TabIndex = 14;
             // 
             // label2
             // 
@@ -447,6 +386,58 @@ namespace ts910
             this.lb_sum.TabIndex = 37;
             this.lb_sum.Text = "0";
             // 
+            // contact1
+            // 
+            this.contact1.Location = new System.Drawing.Point(0, 1450);
+            this.contact1.Margin = new System.Windows.Forms.Padding(2);
+            this.contact1.Name = "contact1";
+            this.contact1.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.contact1.Size = new System.Drawing.Size(546, 333);
+            this.contact1.TabIndex = 14;
+            // 
+            // header1
+            // 
+            this.header1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.header1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(157)))), ((int)(((byte)(254)))));
+            this.header1.Location = new System.Drawing.Point(0, 0);
+            this.header1.Margin = new System.Windows.Forms.Padding(2);
+            this.header1.Name = "header1";
+            this.header1.Size = new System.Drawing.Size(512, 96);
+            this.header1.TabIndex = 13;
+            // 
+            // news_in_Home1
+            // 
+            this.news_in_Home1.Location = new System.Drawing.Point(36, 870);
+            this.news_in_Home1.Margin = new System.Windows.Forms.Padding(2);
+            this.news_in_Home1.Name = "news_in_Home1";
+            this.news_in_Home1.Size = new System.Drawing.Size(463, 548);
+            this.news_in_Home1.TabIndex = 12;
+            // 
+            // footer2
+            // 
+            this.footer2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.footer2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(63)))));
+            this.footer2.Location = new System.Drawing.Point(0, 1846);
+            this.footer2.Margin = new System.Windows.Forms.Padding(1);
+            this.footer2.Name = "footer2";
+            this.footer2.Padding = new System.Windows.Forms.Padding(15, 32, 15, 32);
+            this.footer2.Size = new System.Drawing.Size(512, 400);
+            this.footer2.TabIndex = 8;
+            // 
+            // footer1
+            // 
+            this.footer1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.footer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(63)))));
+            this.footer1.Location = new System.Drawing.Point(19, 32767);
+            this.footer1.Margin = new System.Windows.Forms.Padding(1);
+            this.footer1.Name = "footer1";
+            this.footer1.Padding = new System.Windows.Forms.Padding(15, 32, 15, 32);
+            this.footer1.Size = new System.Drawing.Size(86, 342);
+            this.footer1.TabIndex = 5;
+            // 
             // Home
             // 
             this.AllowDrop = true;
@@ -469,6 +460,7 @@ namespace ts910
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "x";
+            this.Load += new System.EventHandler(this.Home_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -70,6 +70,12 @@
     <Compile Include="ChatBox\uc_chat_user.Designer.cs">
       <DependentUpon>uc_chat_user.cs</DependentUpon>
     </Compile>
+    <Compile Include="Components\ResultItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\ResultItem.Designer.cs">
+      <DependentUpon>ResultItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Contact.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -132,6 +138,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Result.Designer.cs">
+      <DependentUpon>Result.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ChatBox\ChatBox.resx">
       <DependentUpon>ChatBox.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChatBox\uc_chat_user.resx">
       <DependentUpon>uc_chat_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ResultItem.resx">
+      <DependentUpon>ResultItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Contact.resx">
       <DependentUpon>Contact.cs</DependentUpon>
@@ -181,6 +196,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Result.resx">
+      <DependentUpon>Result.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

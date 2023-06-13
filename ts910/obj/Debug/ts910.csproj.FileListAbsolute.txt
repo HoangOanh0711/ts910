@@ -58,3 +58,5 @@ E:\STUDY\C#\LT\ts910\ts910\obj\Debug\ts910.News.News_CardView.resources
 E:\STUDY\C#\LT\ts910\ts910\obj\Debug\ts910.News.News_in_Home.resources
 E:\STUDY\C#\LT\ts910\ts910\obj\Debug\ts910.News.News_ListView.resources
 E:\STUDY\C#\LT\ts910\ts910\obj\Debug\ts910.popup_tu_van.resources
+E:\STUDY\C#\LT\ts910\ts910\obj\Debug\ts910.Result.resources
+E:\STUDY\C#\LT\ts910\ts910\obj\Debug\ts910.Components.ResultItem.resources
