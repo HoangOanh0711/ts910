@@ -88,6 +88,14 @@ namespace ts910
                 float special = float.Parse(tb_specialSubject.Text);
                 lb_sum.Text = Convert.ToString(math + liter + eng + special);
             }
+
+            Result result = new Result();
+            result.Show();
+        }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
