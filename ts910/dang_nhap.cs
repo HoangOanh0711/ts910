@@ -68,7 +68,7 @@ namespace ts910
 
                     if (tb_email.Text.Equals(emailValue))
                     {
-                        Range db_mk = ws.Range[$"F{row}"];
+                        Range db_mk = ws.Range[$"G{row}"];
                         string mkValue = db_mk.Text;
                         if (tb_mk.Text.Equals(mkValue))
                         {

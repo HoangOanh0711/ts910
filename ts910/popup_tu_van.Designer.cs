@@ -121,7 +121,7 @@
             this.guna2TextBox5.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.guna2TextBox5.PlaceholderText = "Nhập câu hỏi của bạn..";
             this.guna2TextBox5.SelectedText = "";
-            this.guna2TextBox5.Size = new System.Drawing.Size(453, 143);
+            this.guna2TextBox5.Size = new System.Drawing.Size(450, 140);
             this.guna2TextBox5.TabIndex = 45;
             // 
             // guna2TextBox6
@@ -150,7 +150,7 @@
             this.guna2TextBox6.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.guna2TextBox6.PlaceholderText = "Họ và tên";
             this.guna2TextBox6.SelectedText = "";
-            this.guna2TextBox6.Size = new System.Drawing.Size(453, 67);
+            this.guna2TextBox6.Size = new System.Drawing.Size(450, 65);
             this.guna2TextBox6.TabIndex = 44;
             // 
             // guna2TextBox7
@@ -179,7 +179,7 @@
             this.guna2TextBox7.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.guna2TextBox7.PlaceholderText = "Số điện thoại";
             this.guna2TextBox7.SelectedText = "";
-            this.guna2TextBox7.Size = new System.Drawing.Size(453, 64);
+            this.guna2TextBox7.Size = new System.Drawing.Size(450, 65);
             this.guna2TextBox7.TabIndex = 43;
             // 
             // guna2TextBox8
@@ -208,7 +208,7 @@
             this.guna2TextBox8.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.guna2TextBox8.PlaceholderText = "Email";
             this.guna2TextBox8.SelectedText = "";
-            this.guna2TextBox8.Size = new System.Drawing.Size(453, 64);
+            this.guna2TextBox8.Size = new System.Drawing.Size(450, 65);
             this.guna2TextBox8.TabIndex = 42;
             // 
             // label14
@@ -228,7 +228,7 @@
             // 
             // popup_tu_van
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(149)))), ((int)(((byte)(210)))));
             this.ClientSize = new System.Drawing.Size(538, 713);

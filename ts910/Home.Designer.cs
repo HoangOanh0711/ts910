@@ -52,6 +52,7 @@ namespace ts910
             this.news_in_Home1 = new ts910.News.News_in_Home();
             this.footer2 = new ts910.Footer();
             this.footer1 = new ts910.Footer();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -438,6 +439,14 @@ namespace ts910
             this.footer1.Size = new System.Drawing.Size(86, 342);
             this.footer1.TabIndex = 5;
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 2246);
+            this.flowLayoutPanel1.TabIndex = 38;
+            // 
             // Home
             // 
             this.AllowDrop = true;
@@ -446,6 +455,7 @@ namespace ts910
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(186)))), ((int)(((byte)(241)))));
             this.ClientSize = new System.Drawing.Size(546, 840);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.lb_sum);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.contact1);
@@ -493,6 +503,7 @@ namespace ts910
         private Contact contact1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lb_sum;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
 

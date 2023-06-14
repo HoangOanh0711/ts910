@@ -44,7 +44,7 @@ namespace ts910
 
         private void btn_dangky_Click(object sender, EventArgs e)
         {
-            if (tb_email.Text == "" || tb_hoten.Text == "" || tb_matkhau.Text == "" || tb_nhaplaimk.Text == "")
+            if (tb_email.Text == "" || tb_hoten.Text == "" || tb_diachi.Text == "" || tb_sdt.Text == "" || tb_matkhau.Text == "" || tb_nhaplaimk.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
@@ -71,8 +71,8 @@ namespace ts910
                     }
 
                     int id = ws.UsedRange.Rows.Count + 1;
-                    Range cells = ws.Range[$"A{id}:F{id}"];
-                    string[] things = { $"{id}", tb_hoten.Text, tb_email.Text, "", "", tb_matkhau.Text };
+                    Range cells = ws.Range[$"A{id}:G{id}"];
+                    string[] things = { $"{id}", tb_hoten.Text, tb_email.Text, tb_sdt.Text,tb_diachi.Text, "", tb_matkhau.Text };
                     cells.set_Value(XlRangeValueDataType.xlRangeValueDefault, things);
                     wb.Save();
                     wb.Close();

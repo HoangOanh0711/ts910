@@ -29,18 +29,16 @@
         private void InitializeComponent()
         {
             this.tb_nhaplaimk = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.tb_hoten = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.btn_dangnhap = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.tb_email = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_dangky = new Guna.UI2.WinForms.Guna2GradientButton();
             this.tb_matkhau = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label14 = new System.Windows.Forms.Label();
+            this.tb_diachi = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tb_sdt = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,31 +56,20 @@
             this.tb_nhaplaimk.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.tb_nhaplaimk.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.tb_nhaplaimk.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tb_nhaplaimk.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(77)))), ((int)(((byte)(186)))));
+            this.tb_nhaplaimk.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(224)))), ((int)(((byte)(255)))));
             this.tb_nhaplaimk.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tb_nhaplaimk.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_nhaplaimk.ForeColor = System.Drawing.Color.White;
+            this.tb_nhaplaimk.ForeColor = System.Drawing.Color.Black;
             this.tb_nhaplaimk.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tb_nhaplaimk.Location = new System.Drawing.Point(28, 497);
+            this.tb_nhaplaimk.Location = new System.Drawing.Point(44, 529);
             this.tb_nhaplaimk.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tb_nhaplaimk.Name = "tb_nhaplaimk";
             this.tb_nhaplaimk.PasswordChar = '*';
-            this.tb_nhaplaimk.PlaceholderText = "";
+            this.tb_nhaplaimk.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.tb_nhaplaimk.PlaceholderText = "Nhập lại mật khẩu";
             this.tb_nhaplaimk.SelectedText = "";
-            this.tb_nhaplaimk.Size = new System.Drawing.Size(471, 49);
+            this.tb_nhaplaimk.Size = new System.Drawing.Size(450, 65);
             this.tb_nhaplaimk.TabIndex = 41;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(23, 463);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(270, 35);
-            this.label8.TabIndex = 40;
-            this.label8.Text = "Nhập lại mật khẩu";
             // 
             // tb_hoten
             // 
@@ -98,32 +85,21 @@
             this.tb_hoten.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.tb_hoten.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.tb_hoten.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tb_hoten.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(77)))), ((int)(((byte)(186)))));
+            this.tb_hoten.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(224)))), ((int)(((byte)(255)))));
             this.tb_hoten.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tb_hoten.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_hoten.ForeColor = System.Drawing.Color.White;
+            this.tb_hoten.ForeColor = System.Drawing.Color.Black;
             this.tb_hoten.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tb_hoten.Location = new System.Drawing.Point(28, 173);
+            this.tb_hoten.Location = new System.Drawing.Point(44, 144);
             this.tb_hoten.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tb_hoten.Name = "tb_hoten";
             this.tb_hoten.PasswordChar = '\0';
-            this.tb_hoten.PlaceholderText = "";
+            this.tb_hoten.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.tb_hoten.PlaceholderText = "Họ và tên";
             this.tb_hoten.SelectedText = "";
-            this.tb_hoten.Size = new System.Drawing.Size(471, 65);
+            this.tb_hoten.Size = new System.Drawing.Size(450, 65);
             this.tb_hoten.TabIndex = 39;
             this.tb_hoten.TextChanged += new System.EventHandler(this.tb_hoten_TextChanged);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(23, 139);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(150, 35);
-            this.label9.TabIndex = 38;
-            this.label9.Text = "Họ và tên";
             // 
             // btn_dangnhap
             // 
@@ -133,7 +109,7 @@
             this.btn_dangnhap.ForeColor = System.Drawing.Color.White;
             this.btn_dangnhap.Location = new System.Drawing.Point(280, 701);
             this.btn_dangnhap.Name = "btn_dangnhap";
-            this.btn_dangnhap.Size = new System.Drawing.Size(201, 29);
+            this.btn_dangnhap.Size = new System.Drawing.Size(162, 22);
             this.btn_dangnhap.TabIndex = 37;
             this.btn_dangnhap.Text = "Đăng nhập ngay";
             this.btn_dangnhap.Click += new System.EventHandler(this.btn_dangnhap_Click);
@@ -146,7 +122,7 @@
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(97, 701);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(238, 27);
+            this.label11.Size = new System.Drawing.Size(185, 22);
             this.label11.TabIndex = 36;
             this.label11.Text = "Bạn đã có tài khoản?";
             // 
@@ -164,18 +140,19 @@
             this.tb_email.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.tb_email.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.tb_email.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tb_email.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(77)))), ((int)(((byte)(186)))));
+            this.tb_email.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(224)))), ((int)(((byte)(255)))));
             this.tb_email.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tb_email.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_email.ForeColor = System.Drawing.Color.White;
+            this.tb_email.ForeColor = System.Drawing.Color.Black;
             this.tb_email.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tb_email.Location = new System.Drawing.Point(28, 277);
+            this.tb_email.Location = new System.Drawing.Point(44, 221);
             this.tb_email.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tb_email.Name = "tb_email";
             this.tb_email.PasswordChar = '\0';
-            this.tb_email.PlaceholderText = "";
+            this.tb_email.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.tb_email.PlaceholderText = "Email";
             this.tb_email.SelectedText = "";
-            this.tb_email.Size = new System.Drawing.Size(471, 49);
+            this.tb_email.Size = new System.Drawing.Size(450, 65);
             this.tb_email.TabIndex = 35;
             // 
             // btn_dangky
@@ -183,14 +160,16 @@
             this.btn_dangky.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_dangky.BackColor = System.Drawing.Color.Transparent;
+            this.btn_dangky.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(47)))), ((int)(((byte)(155)))));
             this.btn_dangky.BorderRadius = 20;
+            this.btn_dangky.BorderThickness = 1;
             this.btn_dangky.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_dangky.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_dangky.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_dangky.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_dangky.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_dangky.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.btn_dangky.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(85)))), ((int)(((byte)(255)))));
+            this.btn_dangky.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(111)))), ((int)(((byte)(212)))));
+            this.btn_dangky.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(111)))), ((int)(((byte)(212)))));
             this.btn_dangky.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_dangky.ForeColor = System.Drawing.Color.White;
             this.btn_dangky.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
@@ -215,43 +194,20 @@
             this.tb_matkhau.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.tb_matkhau.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.tb_matkhau.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tb_matkhau.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(77)))), ((int)(((byte)(186)))));
+            this.tb_matkhau.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(224)))), ((int)(((byte)(255)))));
             this.tb_matkhau.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tb_matkhau.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_matkhau.ForeColor = System.Drawing.Color.White;
+            this.tb_matkhau.ForeColor = System.Drawing.Color.Black;
             this.tb_matkhau.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tb_matkhau.Location = new System.Drawing.Point(28, 386);
+            this.tb_matkhau.Location = new System.Drawing.Point(44, 452);
             this.tb_matkhau.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tb_matkhau.Name = "tb_matkhau";
             this.tb_matkhau.PasswordChar = '*';
-            this.tb_matkhau.PlaceholderText = "";
+            this.tb_matkhau.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.tb_matkhau.PlaceholderText = "Mật khẩu";
             this.tb_matkhau.SelectedText = "";
-            this.tb_matkhau.Size = new System.Drawing.Size(471, 49);
+            this.tb_matkhau.Size = new System.Drawing.Size(450, 65);
             this.tb_matkhau.TabIndex = 33;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(23, 352);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(145, 35);
-            this.label12.TabIndex = 32;
-            this.label12.Text = "Mật khẩu";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(23, 243);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(94, 35);
-            this.label13.TabIndex = 31;
-            this.label13.Text = "Email";
             // 
             // guna2PictureBox2
             // 
@@ -275,7 +231,7 @@
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(3, 75);
+            this.label14.Location = new System.Drawing.Point(3, 62);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(533, 46);
@@ -283,23 +239,79 @@
             this.label14.Text = "ĐĂNG KÝ";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // tb_diachi
+            // 
+            this.tb_diachi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tb_diachi.BackColor = System.Drawing.Color.Transparent;
+            this.tb_diachi.BorderColor = System.Drawing.Color.Transparent;
+            this.tb_diachi.BorderRadius = 20;
+            this.tb_diachi.BorderThickness = 0;
+            this.tb_diachi.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tb_diachi.DefaultText = "";
+            this.tb_diachi.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tb_diachi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tb_diachi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_diachi.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_diachi.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(224)))), ((int)(((byte)(255)))));
+            this.tb_diachi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_diachi.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_diachi.ForeColor = System.Drawing.Color.Black;
+            this.tb_diachi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_diachi.Location = new System.Drawing.Point(44, 375);
+            this.tb_diachi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tb_diachi.Name = "tb_diachi";
+            this.tb_diachi.PasswordChar = '\0';
+            this.tb_diachi.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.tb_diachi.PlaceholderText = "Địa chỉ";
+            this.tb_diachi.SelectedText = "";
+            this.tb_diachi.Size = new System.Drawing.Size(450, 65);
+            this.tb_diachi.TabIndex = 43;
+            // 
+            // tb_sdt
+            // 
+            this.tb_sdt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tb_sdt.BackColor = System.Drawing.Color.Transparent;
+            this.tb_sdt.BorderColor = System.Drawing.Color.Transparent;
+            this.tb_sdt.BorderRadius = 20;
+            this.tb_sdt.BorderThickness = 0;
+            this.tb_sdt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tb_sdt.DefaultText = "";
+            this.tb_sdt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tb_sdt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tb_sdt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_sdt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_sdt.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(224)))), ((int)(((byte)(255)))));
+            this.tb_sdt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_sdt.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_sdt.ForeColor = System.Drawing.Color.Black;
+            this.tb_sdt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_sdt.Location = new System.Drawing.Point(44, 298);
+            this.tb_sdt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tb_sdt.Name = "tb_sdt";
+            this.tb_sdt.PasswordChar = '\0';
+            this.tb_sdt.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.tb_sdt.PlaceholderText = "Số điện thoại";
+            this.tb_sdt.SelectedText = "";
+            this.tb_sdt.Size = new System.Drawing.Size(450, 65);
+            this.tb_sdt.TabIndex = 42;
+            // 
             // dang_ky
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(114)))), ((int)(((byte)(238)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(149)))), ((int)(((byte)(210)))));
             this.ClientSize = new System.Drawing.Size(538, 794);
+            this.Controls.Add(this.tb_diachi);
+            this.Controls.Add(this.tb_sdt);
             this.Controls.Add(this.tb_nhaplaimk);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.tb_hoten);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.btn_dangnhap);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.tb_email);
             this.Controls.Add(this.btn_dangky);
             this.Controls.Add(this.tb_matkhau);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label13);
             this.Controls.Add(this.guna2PictureBox2);
             this.Controls.Add(this.label14);
             this.Font = new System.Drawing.Font("Arial", 15.75F);
@@ -316,17 +328,15 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2TextBox tb_nhaplaimk;
-        private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2TextBox tb_hoten;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label btn_dangnhap;
         private System.Windows.Forms.Label label11;
         private Guna.UI2.WinForms.Guna2TextBox tb_email;
         private Guna.UI2.WinForms.Guna2GradientButton btn_dangky;
         private Guna.UI2.WinForms.Guna2TextBox tb_matkhau;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private System.Windows.Forms.Label label14;
+        private Guna.UI2.WinForms.Guna2TextBox tb_diachi;
+        private Guna.UI2.WinForms.Guna2TextBox tb_sdt;
     }
 }
