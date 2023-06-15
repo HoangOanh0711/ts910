@@ -80,7 +80,7 @@ namespace ts910
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
             this.guna2Panel1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Panel1.Location = new System.Drawing.Point(27, 274);
+            this.guna2Panel1.Location = new System.Drawing.Point(37, 274);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Padding = new System.Windows.Forms.Padding(15, 16, 15, 16);
@@ -194,9 +194,9 @@ namespace ts910
             this.lb_specialSub.Location = new System.Drawing.Point(16, 389);
             this.lb_specialSub.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_specialSub.Name = "lb_specialSub";
-            this.lb_specialSub.Size = new System.Drawing.Size(125, 22);
+            this.lb_specialSub.Size = new System.Drawing.Size(137, 22);
             this.lb_specialSub.TabIndex = 9;
-            this.lb_specialSub.Text = "Môn chuyên";
+            this.lb_specialSub.Text = "Môn chuyên: ";
             // 
             // tb_english
             // 
@@ -329,9 +329,9 @@ namespace ts910
             this.cbx_type.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.cbx_type.ItemHeight = 44;
             this.cbx_type.Items.AddRange(new object[] {
-            "Trường thường",
-            "Trường chuyên",
-            "Tích hợp"});
+            "TS10 thường",
+            "TS10 chuyên",
+            "TS10 tích hợp"});
             this.cbx_type.Location = new System.Drawing.Point(16, 52);
             this.cbx_type.Margin = new System.Windows.Forms.Padding(2);
             this.cbx_type.Name = "cbx_type";
@@ -359,7 +359,7 @@ namespace ts910
             this.pictureBox1.Location = new System.Drawing.Point(0, 97);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(512, 177);
+            this.pictureBox1.Size = new System.Drawing.Size(535, 177);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -404,7 +404,7 @@ namespace ts910
             this.header1.Location = new System.Drawing.Point(0, 0);
             this.header1.Margin = new System.Windows.Forms.Padding(2);
             this.header1.Name = "header1";
-            this.header1.Size = new System.Drawing.Size(512, 96);
+            this.header1.Size = new System.Drawing.Size(535, 96);
             this.header1.TabIndex = 13;
             // 
             // news_in_Home1
@@ -424,7 +424,7 @@ namespace ts910
             this.footer2.Margin = new System.Windows.Forms.Padding(1);
             this.footer2.Name = "footer2";
             this.footer2.Padding = new System.Windows.Forms.Padding(15, 32, 15, 32);
-            this.footer2.Size = new System.Drawing.Size(512, 400);
+            this.footer2.Size = new System.Drawing.Size(536, 400);
             this.footer2.TabIndex = 8;
             // 
             // footer1
@@ -432,11 +432,11 @@ namespace ts910
             this.footer1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.footer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(63)))));
-            this.footer1.Location = new System.Drawing.Point(19, 32767);
+            this.footer1.Location = new System.Drawing.Point(19, 34096);
             this.footer1.Margin = new System.Windows.Forms.Padding(1);
             this.footer1.Name = "footer1";
             this.footer1.Padding = new System.Windows.Forms.Padding(15, 32, 15, 32);
-            this.footer1.Size = new System.Drawing.Size(86, 342);
+            this.footer1.Size = new System.Drawing.Size(69, 342);
             this.footer1.TabIndex = 5;
             // 
             // flowLayoutPanel1
@@ -446,6 +446,7 @@ namespace ts910
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 2246);
             this.flowLayoutPanel1.TabIndex = 38;
+            this.flowLayoutPanel1.Visible = false;
             // 
             // Home
             // 
@@ -455,7 +456,6 @@ namespace ts910
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(186)))), ((int)(((byte)(241)))));
             this.ClientSize = new System.Drawing.Size(546, 840);
-            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.lb_sum);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.contact1);
@@ -465,6 +465,7 @@ namespace ts910
             this.Controls.Add(this.footer2);
             this.Controls.Add(this.footer1);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Home";

@@ -12,9 +12,23 @@ namespace ts910.Components
 {
     public partial class ResultItem : UserControl
     {
+
+        private int _index;
+
         public ResultItem()
         {
             InitializeComponent();
         }
+
+        public int index { get => _index; set { _index = value; lb_index.Text = _index.ToString(); } }
+        public string schoolName { get => lk_schoolname.Text; set => lk_schoolname.Text = value; }
+        public string weblink;
+        public string address { get => lb_address.Text; set => lb_address.Text = value; }
+        public string year { get => lb_year.Text; set => lb_year.Text = value; }
+        public string studentNumber { get => lb_studentnumber.Text; set => lb_studentnumber.Text = value; }
+        public string nv1 { get => lb_nv1.Text; set => lb_nv1.Text = value; }
+        public string nv2 { get => lb_nv2.Text; set => lb_nv2.Text = value; }
+        public string nv3 { get => lb_nv3.Text; set => lb_nv3.Text = value; }
+        //public Boolean nv2 { get => lb_index.Text; set => lb_index.Text = value; }
     }
 }

@@ -60,7 +60,32 @@ namespace ts910
 
         private void cbx_type_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if(cbx_type.SelectedIndex == 0)
+            {
+                lb_specialSub.Visible = false;
+                lb_special.Visible = false;
+                tb_specialSubject.Visible = false;
+                cbx_specialSubject.Visible = false;
+            }
+            else
+            {
+                lb_specialSub.Visible = true;
+                lb_special.Visible = true;
+                tb_specialSubject.Visible = true;
+                cbx_specialSubject.Visible = true;
+                tb_specialSubject.Text = string.Empty;
 
+                if (cbx_type.SelectedIndex == 2)
+                {
+                    lb_specialSub.Text = "Môn tích hợp: ";
+                    cbx_specialSubject.SelectedIndex = 2;
+                }
+                else
+                {
+                    lb_specialSub.Text = "Môn chuyên: ";
+                    cbx_specialSubject.SelectedIndex = -1;
+                }
+            }
         }
 
         private void btn_submit_Click(object sender, EventArgs e)
@@ -68,28 +93,60 @@ namespace ts910
             float math = float.Parse(tb_math.Text);
             float liter = float.Parse(tb_liter.Text);
             float eng = float.Parse(tb_english.Text);
+            float sum;
 
 
             if (cbx_type.SelectedIndex == 0) {
-                lb_sum.Text = Convert.ToString(math + liter + eng);
+                if(tb_math.Text.Trim() == "" || tb_liter.Text.Trim() == "" || tb_english.Text.Trim() == "")
+                {
+                    MessageBox.Show("Vui lòng nhập điểm các môn", "Lỗi");
+                    return;
+                }
+                else
+                {
+                    sum = math + liter + eng;
+                    lb_sum.Text = Convert.ToString(sum);
+                }
             }
             else if (cbx_type.SelectedIndex == 1)
             {
-                if (cbx_specialSubject.SelectedIndex > 0)
+                if (cbx_specialSubject.SelectedIndex != -1)
                 {
-                    float special = float.Parse(tb_specialSubject.Text);
-                    lb_sum.Text = Convert.ToString(math + liter + eng + special * 2);
+                    if(tb_specialSubject.Text.Trim() != "")
+                    {
+                        float special = float.Parse(tb_specialSubject.Text);
+                        sum = math + liter + eng + special * 2;
+                        lb_sum.Text = Convert.ToString(sum);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Vui lòng nhập điểm môn chuyên", "Lỗi");
+                        return;
+                    }
                 }
                 else
+                {
                     MessageBox.Show("Vui lòng chọn môn chuyên", "Lỗi");
+                    return;
+                }   
             }
             else
             {
-                float special = float.Parse(tb_specialSubject.Text);
-                lb_sum.Text = Convert.ToString(math + liter + eng + special);
+                if (tb_specialSubject.Text.Trim() != "")
+                {
+                    float special = float.Parse(tb_specialSubject.Text);
+                    sum = math + liter + eng + special;
+                    lb_sum.Text = Convert.ToString(sum);
+                }
+                else
+                {
+                    MessageBox.Show("Vui lòng nhập điểm môn tiếng anh", "Lỗi");
+                    return;
+                }
+
             }
 
-            Result result = new Result();
+            Result result = new Result(lb_sum.Text, cbx_type.SelectedIndex, cbx_specialSubject.SelectedIndex);
             result.Show();
         }
 
