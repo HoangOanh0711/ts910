@@ -30,30 +30,29 @@ namespace ts910
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 10, 10));
-        }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
+            header1.Location = new Point(0, 0);
+            header1.Size = new Size(527, 96);
 
-        }
+            pictureBox1.Location = new Point(0, 97);
+            pictureBox1.Size = new Size(527, 177);
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
+            guna2Panel1.Location = new Point(37, 274);
+            guna2Panel1.Size = new Size(454, 550);
 
+            news_in_Home1.Location = new Point(36, 870);
+            news_in_Home1.Size = new Size(463, 548);
+
+            contact1.Location = new Point(0, 1450);
+            contact1.Size = new Size(523, 333);
+
+            footer2.Location = new Point(0, 1846);
+            footer2.Size = new Size(530, 400);
+
+            drawer.Visible = false;
         }
 
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void guna2PictureBox2_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            this.Close();
-        }
-
-        private void header1_Load(object sender, EventArgs e)
         {
 
         }
@@ -150,9 +149,48 @@ namespace ts910
             result.Show();
         }
 
-        private void Home_Load(object sender, EventArgs e)
+        private bool check = false;
+        private void timerDrawer_Tick(object sender, EventArgs e)
         {
+            if (check)
+            {
+                drawer.Width -= 10;
+                if (drawer.Width == drawer.MinimumSize.Width)
+                {
+                    check = false;
+                    timerDrawer.Stop();
+                }
+            }
+            else
+            {
+                drawer.Width += 10;
+                if (drawer.Width == drawer.MaximumSize.Width)
+                {
+                    drawer.Visible = true;
+                    check = true;
+                    timerDrawer.Stop();
+                }
+            }
+        }
 
+        private void btn_close_Click(object sender, EventArgs e)
+        {
+            timerDrawer.Start();
+        }
+
+        public static bool isClick;
+
+        private void click()
+        {
+            if (isClick)
+            {
+                timerDrawer.Start();
+            }
+        }
+
+        public void click1()
+        {
+            timerDrawer.Start();
         }
     }
 }
