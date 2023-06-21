@@ -25,11 +25,22 @@ namespace ts910
         );
 
 
-        public Home()
+        public Home(UserInfo userInfo)
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 10, 10));
+
+            setSize();
+
+            drawer.Visible = false;
+
+            lb_username.Text = userInfo.Hoten;
+        }
+
+        private void setSize()
+        {
+            this.Size = new Size(526, 840);
 
             header1.Location = new Point(0, 0);
             header1.Size = new Size(527, 96);
@@ -48,10 +59,7 @@ namespace ts910
 
             footer2.Location = new Point(0, 1846);
             footer2.Size = new Size(530, 400);
-
-            drawer.Visible = false;
         }
-
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -178,17 +186,7 @@ namespace ts910
             timerDrawer.Start();
         }
 
-        public static bool isClick;
-
-        private void click()
-        {
-            if (isClick)
-            {
-                timerDrawer.Start();
-            }
-        }
-
-        public void click1()
+        private void header1_Click(object sender, EventArgs e)
         {
             timerDrawer.Start();
         }

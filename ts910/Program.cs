@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ts910.ChatBox;
 
 namespace ts910
 {
@@ -18,7 +19,9 @@ namespace ts910
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Home());
+            //Application.Run(new dang_nhap());
+            Application.Run(new ChatBox.ChatBox());
+
         }
     }
 }

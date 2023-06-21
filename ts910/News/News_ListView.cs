@@ -59,8 +59,8 @@ namespace ts910.News
         private void guna2PictureBox2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Home home = new Home();
-            home.ShowDialog();
+            //Home home = new Home();
+            //home.ShowDialog();
             this.Close();
         }
 

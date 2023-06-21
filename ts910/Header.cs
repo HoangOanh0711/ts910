@@ -22,6 +22,6 @@ namespace ts910
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e) => Home.isClick = true;
+        private void pictureBox1_Click(object sender, EventArgs e) { }
     }
 }

@@ -72,7 +72,7 @@ namespace ts910
 
                     int id = ws.UsedRange.Rows.Count + 1;
                     Range cells = ws.Range[$"A{id}:G{id}"];
-                    string[] things = { $"{id}", tb_hoten.Text, tb_email.Text, tb_sdt.Text,tb_diachi.Text, "", tb_matkhau.Text };
+                    string[] things = { $"{id}", tb_hoten.Text, tb_email.Text, tb_sdt.Text,tb_diachi.Text, "Resources/user.png", tb_matkhau.Text };
                     cells.set_Value(XlRangeValueDataType.xlRangeValueDefault, things);
                     wb.Save();
                     wb.Close();

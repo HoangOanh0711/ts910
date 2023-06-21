@@ -72,10 +72,11 @@ namespace ts910
                         string mkValue = db_mk.Text;
                         if (tb_mk.Text.Equals(mkValue))
                         {
+                            UserInfo userInfo = new UserInfo(ws.Range[$"B{row}"].Text, ws.Range[$"C{row}"].Text, ws.Range[$"D{row}"].Text, ws.Range[$"E{row}"].Text, ws.Range[$"F{row}"].Text);
                             wb.Close();
                             MessageBox.Show("Đăng nhập thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             this.Hide();
-                            Home home = new Home();
+                            Home home = new Home(userInfo);
                             home.ShowDialog();
                             this.Close();
                         }

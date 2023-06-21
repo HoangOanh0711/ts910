@@ -54,44 +54,44 @@ namespace ts910
             this.footer1 = new ts910.Footer();
             this.drawer = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
+            this.btn_close = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
-            this.btn_close = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2CirclePictureBox7 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox6 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox5 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox4 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox3 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.lb_username = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timerDrawer = new System.Windows.Forms.Timer(this.components);
             this.guna2Panel1.SuspendLayout();
             this.drawer.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_close)).BeginInit();
+            this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox7)).BeginInit();
+            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox6)).BeginInit();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox5)).BeginInit();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox4)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -120,7 +120,7 @@ namespace ts910
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
             this.guna2Panel1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Panel1.Location = new System.Drawing.Point(-18, 274);
+            this.guna2Panel1.Location = new System.Drawing.Point(-44, 274);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Padding = new System.Windows.Forms.Padding(15, 16, 15, 16);
@@ -429,8 +429,9 @@ namespace ts910
             this.header1.Location = new System.Drawing.Point(0, 0);
             this.header1.Margin = new System.Windows.Forms.Padding(2);
             this.header1.Name = "header1";
-            this.header1.Size = new System.Drawing.Size(527, 96);
+            this.header1.Size = new System.Drawing.Size(476, 96);
             this.header1.TabIndex = 13;
+            this.header1.Click += new System.EventHandler(this.header1_Click);
             // 
             // news_in_Home1
             // 
@@ -449,7 +450,7 @@ namespace ts910
             this.footer2.Margin = new System.Windows.Forms.Padding(1);
             this.footer2.Name = "footer2";
             this.footer2.Padding = new System.Windows.Forms.Padding(15, 32, 15, 32);
-            this.footer2.Size = new System.Drawing.Size(530, 400);
+            this.footer2.Size = new System.Drawing.Size(479, 400);
             this.footer2.TabIndex = 8;
             // 
             // footer1
@@ -485,122 +486,26 @@ namespace ts910
             this.guna2Panel2.Controls.Add(this.panel3);
             this.guna2Panel2.Controls.Add(this.panel2);
             this.guna2Panel2.Controls.Add(this.panel1);
-            this.guna2Panel2.Controls.Add(this.label6);
+            this.guna2Panel2.Controls.Add(this.lb_username);
             this.guna2Panel2.Controls.Add(this.guna2CirclePictureBox1);
             this.guna2Panel2.Location = new System.Drawing.Point(3, 3);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(245, 539);
             this.guna2Panel2.TabIndex = 1;
             // 
-            // label7
+            // btn_close
             // 
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(57, 2);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(101, 45);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Trang chủ";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(58, 141);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(122, 27);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Username";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.guna2CirclePictureBox2);
-            this.panel1.Location = new System.Drawing.Point(10, 208);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(219, 48);
-            this.panel1.TabIndex = 3;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.guna2CirclePictureBox3);
-            this.panel2.Location = new System.Drawing.Point(10, 262);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(219, 48);
-            this.panel2.TabIndex = 4;
-            // 
-            // label9
-            // 
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(57, 2);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(156, 45);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Lịch sử tra cứu";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.label10);
-            this.panel3.Controls.Add(this.guna2CirclePictureBox4);
-            this.panel3.Location = new System.Drawing.Point(10, 316);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(219, 48);
-            this.panel3.TabIndex = 4;
-            // 
-            // label10
-            // 
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(57, 2);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(101, 45);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "Tư vấn";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.label11);
-            this.panel4.Controls.Add(this.guna2CirclePictureBox5);
-            this.panel4.Location = new System.Drawing.Point(10, 370);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(219, 48);
-            this.panel4.TabIndex = 4;
-            // 
-            // label11
-            // 
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(57, 2);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(159, 45);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "Bản đồ GIS";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.label12);
-            this.panel5.Controls.Add(this.guna2CirclePictureBox6);
-            this.panel5.Location = new System.Drawing.Point(10, 424);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(219, 48);
-            this.panel5.TabIndex = 4;
-            // 
-            // label12
-            // 
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(57, 2);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(101, 45);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "Tin tức";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_close.BackColor = System.Drawing.Color.Transparent;
+            this.btn_close.Image = global::ts910.Properties.Resources.close_;
+            this.btn_close.ImageRotate = 0F;
+            this.btn_close.Location = new System.Drawing.Point(202, 12);
+            this.btn_close.Name = "btn_close";
+            this.btn_close.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btn_close.Size = new System.Drawing.Size(30, 30);
+            this.btn_close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_close.TabIndex = 2;
+            this.btn_close.TabStop = false;
+            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
             // 
             // panel6
             // 
@@ -622,20 +527,6 @@ namespace ts910
             this.label13.Text = "Đăng xuất";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // btn_close
-            // 
-            this.btn_close.BackColor = System.Drawing.Color.Transparent;
-            this.btn_close.Image = global::ts910.Properties.Resources.close_;
-            this.btn_close.ImageRotate = 0F;
-            this.btn_close.Location = new System.Drawing.Point(202, 12);
-            this.btn_close.Name = "btn_close";
-            this.btn_close.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btn_close.Size = new System.Drawing.Size(30, 30);
-            this.btn_close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_close.TabIndex = 2;
-            this.btn_close.TabStop = false;
-            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
-            // 
             // guna2CirclePictureBox7
             // 
             this.guna2CirclePictureBox7.BackColor = System.Drawing.Color.Transparent;
@@ -648,6 +539,26 @@ namespace ts910
             this.guna2CirclePictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2CirclePictureBox7.TabIndex = 0;
             this.guna2CirclePictureBox7.TabStop = false;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.label12);
+            this.panel5.Controls.Add(this.guna2CirclePictureBox6);
+            this.panel5.Location = new System.Drawing.Point(10, 424);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(219, 48);
+            this.panel5.TabIndex = 4;
+            // 
+            // label12
+            // 
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(57, 2);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(101, 45);
+            this.label12.TabIndex = 1;
+            this.label12.Text = "Tin tức";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // guna2CirclePictureBox6
             // 
@@ -662,6 +573,26 @@ namespace ts910
             this.guna2CirclePictureBox6.TabIndex = 0;
             this.guna2CirclePictureBox6.TabStop = false;
             // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.label11);
+            this.panel4.Controls.Add(this.guna2CirclePictureBox5);
+            this.panel4.Location = new System.Drawing.Point(10, 370);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(219, 48);
+            this.panel4.TabIndex = 4;
+            // 
+            // label11
+            // 
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(57, 2);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(159, 45);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "Bản đồ GIS";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // guna2CirclePictureBox5
             // 
             this.guna2CirclePictureBox5.BackColor = System.Drawing.Color.Transparent;
@@ -674,6 +605,26 @@ namespace ts910
             this.guna2CirclePictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2CirclePictureBox5.TabIndex = 0;
             this.guna2CirclePictureBox5.TabStop = false;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.label10);
+            this.panel3.Controls.Add(this.guna2CirclePictureBox4);
+            this.panel3.Location = new System.Drawing.Point(10, 316);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(219, 48);
+            this.panel3.TabIndex = 4;
+            // 
+            // label10
+            // 
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(57, 2);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(101, 45);
+            this.label10.TabIndex = 1;
+            this.label10.Text = "Tư vấn";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // guna2CirclePictureBox4
             // 
@@ -688,6 +639,26 @@ namespace ts910
             this.guna2CirclePictureBox4.TabIndex = 0;
             this.guna2CirclePictureBox4.TabStop = false;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.guna2CirclePictureBox3);
+            this.panel2.Location = new System.Drawing.Point(10, 262);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(219, 48);
+            this.panel2.TabIndex = 4;
+            // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(57, 2);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(156, 45);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "Lịch sử tra cứu";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // guna2CirclePictureBox3
             // 
             this.guna2CirclePictureBox3.BackColor = System.Drawing.Color.Transparent;
@@ -701,6 +672,26 @@ namespace ts910
             this.guna2CirclePictureBox3.TabIndex = 0;
             this.guna2CirclePictureBox3.TabStop = false;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.guna2CirclePictureBox2);
+            this.panel1.Location = new System.Drawing.Point(10, 208);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(219, 48);
+            this.panel1.TabIndex = 3;
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(57, 2);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(101, 45);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "Trang chủ";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // guna2CirclePictureBox2
             // 
             this.guna2CirclePictureBox2.BackColor = System.Drawing.Color.Transparent;
@@ -713,6 +704,16 @@ namespace ts910
             this.guna2CirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2CirclePictureBox2.TabIndex = 0;
             this.guna2CirclePictureBox2.TabStop = false;
+            // 
+            // lb_username
+            // 
+            this.lb_username.AutoSize = true;
+            this.lb_username.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_username.Location = new System.Drawing.Point(58, 141);
+            this.lb_username.Name = "lb_username";
+            this.lb_username.Size = new System.Drawing.Size(122, 27);
+            this.lb_username.TabIndex = 1;
+            this.lb_username.Text = "Username";
             // 
             // guna2CirclePictureBox1
             // 
@@ -733,7 +734,7 @@ namespace ts910
             this.pictureBox1.Location = new System.Drawing.Point(0, 97);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(527, 177);
+            this.pictureBox1.Size = new System.Drawing.Size(476, 177);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -750,7 +751,7 @@ namespace ts910
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(186)))), ((int)(((byte)(241)))));
-            this.ClientSize = new System.Drawing.Size(546, 840);
+            this.ClientSize = new System.Drawing.Size(563, 840);
             this.Controls.Add(this.drawer);
             this.Controls.Add(this.lb_sum);
             this.Controls.Add(this.label2);
@@ -771,18 +772,18 @@ namespace ts910
             this.drawer.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn_close)).EndInit();
+            this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox7)).EndInit();
+            this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox6)).EndInit();
+            this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox5)).EndInit();
+            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox4)).EndInit();
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).EndInit();
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -819,7 +820,7 @@ namespace ts910
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox2;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lb_username;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label13;
