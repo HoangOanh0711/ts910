@@ -122,3 +122,7 @@ D:\Project\c#\ts910\ts910\obj\Debug\ts910.News.News_in_Home.resources
 D:\Project\c#\ts910\ts910\obj\Debug\ts910.News.News_ListView.resources
 D:\Project\c#\ts910\ts910\obj\Debug\ts910.popup_tu_van.resources
 D:\Project\c#\ts910\ts910\obj\Debug\ts910.Result.resources
+G:\Oanhhh\c#\ts910\ts910\obj\Debug\ts910.News.Card_New.resources
+G:\Oanhhh\c#\ts910\ts910\obj\Debug\ts910.News.uc_card_new1.resources
+G:\Oanhhh\c#\ts910\ts910\obj\Debug\ts910.News.uc_card_new2.resources
+G:\Oanhhh\c#\ts910\ts910\obj\Debug\ts910.News.uc_card_new3.resources
