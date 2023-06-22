@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Office.Interop.Excel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,14 +13,21 @@ namespace ts910.ChatBox
 {
     public partial class uc_chat_user : UserControl
     {
-        public uc_chat_user() { }
-        public uc_chat_user(string text, string anh)
+        
+        public uc_chat_user() 
+        {
+           
+        }
+        public uc_chat_user(string text, string anh, string time)
         {
             InitializeComponent();
+            
             Text = text;
             Anh = Image.FromFile(anh);
         }
+        string time;
         public string Text { get => tb_user.Text; set => tb_user.Text = value; }
+        public string Time { get => time; set => time = value; }
         public Image Anh { get => ava_user.Image; set => ava_user.Image = value; }
 
 

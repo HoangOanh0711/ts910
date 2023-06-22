@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChatBox));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_back_chat = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -112,12 +113,15 @@
             // 
             // tb_nhap
             // 
+            this.tb_nhap.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.tb_nhap.BorderRadius = 30;
             this.tb_nhap.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tb_nhap.DefaultText = "";
             this.tb_nhap.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.tb_nhap.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.tb_nhap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.tb_nhap.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_nhap.FillColor = System.Drawing.Color.WhiteSmoke;
             this.tb_nhap.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tb_nhap.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_nhap.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -125,7 +129,8 @@
             this.tb_nhap.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.tb_nhap.Name = "tb_nhap";
             this.tb_nhap.PasswordChar = '\0';
-            this.tb_nhap.PlaceholderText = "";
+            this.tb_nhap.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.tb_nhap.PlaceholderText = "Nhắn tin";
             this.tb_nhap.SelectedText = "";
             this.tb_nhap.Size = new System.Drawing.Size(483, 55);
             this.tb_nhap.TabIndex = 0;
@@ -160,9 +165,9 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ChatBox";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ChatBox";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn_back_chat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();

@@ -17,7 +17,7 @@ namespace ts910.ChatBox
             set { command = value; }
         }
 
-        private string message,image;
+        private string message,image,time;
 
         public string Message
         {
@@ -31,11 +31,18 @@ namespace ts910.ChatBox
             set { image = value; }
         }
 
-        public SocketData(int command, string message, string image)
+        public string Time
+        {
+            get { return time; }
+            set { time = value; }
+        }
+
+        public SocketData(int command, string message, string image, string time)
         {
             this.Command = command;
             this.Message = message;
             this.Image = image;
+            this.Time = time;
         }
     }
 

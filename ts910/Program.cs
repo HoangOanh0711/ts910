@@ -20,7 +20,7 @@ namespace ts910
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new dang_nhap());
-            Application.Run(new ChatBox.ChatBox());
+            Application.Run(new dang_nhap());
 
         }
     }

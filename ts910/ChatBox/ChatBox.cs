@@ -16,24 +16,23 @@ namespace ts910.ChatBox
 {
     public partial class ChatBox : Form
     {
+        UserInfo userInfo;
+
         SocketManager socket;
         String ipLocal;
-        String image = "Resources/user.png";
-        public ChatBox()
+        //String image = "Resources/user.png";
+
+   
+        string time = DateTime.Now.Hour.ToString() + ":" + DateTime.Now.Minute.ToString();
+
+        public ChatBox(UserInfo userInfo)
         {
             InitializeComponent();
-            
+            this.userInfo = userInfo;
             Connect();
-
-            flow_chat.Controls.Add(new uc_chat_admin("hello",image));
-            flow_chat.Controls.Add(new uc_chat_user("hi", image));
 
         }
 
-        /*private string getIP()
-        {
-            
-        }*/
         private void guna2PictureBox2_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -44,8 +43,11 @@ namespace ts910.ChatBox
 
         private void btn_send_Click(object sender, EventArgs e)
         {
-            flow_chat.Controls.Add(new uc_chat_user(tb_nhap.Text, image));
-            socket.Send(new SocketData((int)SocketCommand.SEND_MESSAGE, tb_nhap.Text, image));
+
+            //int date = DateTime.Now.Date;
+            time = DateTime.Now.Hour.ToString() + ":" + DateTime.Now.Minute.ToString();
+            flow_chat.Controls.Add(new uc_chat_user(tb_nhap.Text, userInfo.Ava, time));
+            socket.Send(new SocketData((int)SocketCommand.SEND_MESSAGE, tb_nhap.Text, userInfo.Ava, time));
             tb_nhap.Text = "";
            
 
@@ -65,40 +67,28 @@ namespace ts910.ChatBox
 
         }
 
+        delegate void SetTextCallback(Form f, Control ctrl, string text, string anh, string time);
+
+        public static void SetText(Form form, Control ctrl, string text, string anh, string time)
+        {
+            if (ctrl.InvokeRequired)
+            {
+                SetTextCallback d = new SetTextCallback(SetText);
+                form.Invoke(d, new object[] { form, ctrl, text, anh, time });
+            }
+            else
+            {
+                ctrl.Controls.Add(new uc_chat_admin(text, anh, time));
+            }
+        }
+
         private void ProcessData(SocketData data)
         {
-
             switch (data.Command)
             {
                 case (int)SocketCommand.SEND_MESSAGE:
-                    //MessageBox.Show(data.Message);
-                    if (socket.IsServer)
-                    {
-                        MessageBox.Show(data.Message, "server", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                    else
-                    {
-                        MessageBox.Show(data.Message, "client", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                    //flow_chat.Controls.Add(new uc_chat_admin(data.Message, data.Image));
+                    SetText(this, flow_chat, data.Message, data.Image, data.Time);
                     break;
-
-                //case (int)SocketCommand.NAMECL:
-                //    this.Invoke((MethodInvoker)(() =>
-                //    {
-                //        name2.Text = data.Message;
-                //        board.ListPlayers[1].Name = data.Message;
-                //    }));
-                //    break;
-
-                //case (int)SocketCommand.NAMESE:
-                //    this.Invoke((MethodInvoker)(() =>
-                //    {
-                //        name1.Text = data.Message;
-                //        board.ListPlayers[0].Name = data.Message;
-                //        socket.Send(new SocketData((int)SocketCommand.NAMECL, name2.Text, new Point()));
-                //    }));
-                //    break;
 
                 case (int)SocketCommand.QUIT:
                     this.Invoke((MethodInvoker)(() =>
@@ -118,14 +108,12 @@ namespace ts910.ChatBox
 
         private void Connect()
         {
-
-            /*socket.IP = getIP();*/
-            /*socket.IP = "192.168.100.118";*/
             socket = new SocketManager();
-            ipLocal = socket.GetLocalIPv4(NetworkInterfaceType.Wireless80211);
 
+            ipLocal = socket.GetLocalIPv4(NetworkInterfaceType.Wireless80211);
             if (string.IsNullOrEmpty(ipLocal))
                 ipLocal = socket.GetLocalIPv4(NetworkInterfaceType.Ethernet);
+
             socket.IP = ipLocal;
  
             if (!socket.ConnectServer())

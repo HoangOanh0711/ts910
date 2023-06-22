@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logoapp.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.4\lib\net472\Guna.UI2.dll</HintPath>
@@ -150,6 +153,12 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="News\Card_New.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="News\Card_New.Designer.cs">
+      <DependentUpon>Card_New.cs</DependentUpon>
+    </Compile>
     <Compile Include="News\News_CardView.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -167,6 +176,24 @@
     </Compile>
     <Compile Include="News\News_ListView.Designer.cs">
       <DependentUpon>News_ListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="News\uc_card_new1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="News\uc_card_new1.Designer.cs">
+      <DependentUpon>uc_card_new1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="News\uc_card_new2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="News\uc_card_new2.Designer.cs">
+      <DependentUpon>uc_card_new2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="News\uc_card_new3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="News\uc_card_new3.Designer.cs">
+      <DependentUpon>uc_card_new3.cs</DependentUpon>
     </Compile>
     <Compile Include="popup_tu_van.cs">
       <SubType>Form</SubType>
@@ -213,6 +240,9 @@
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="News\Card_New.resx">
+      <DependentUpon>Card_New.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="News\News_CardView.resx">
       <DependentUpon>News_CardView.cs</DependentUpon>
     </EmbeddedResource>
@@ -221,6 +251,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="News\News_ListView.resx">
       <DependentUpon>News_ListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="News\uc_card_new1.resx">
+      <DependentUpon>uc_card_new1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="News\uc_card_new2.resx">
+      <DependentUpon>uc_card_new2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="News\uc_card_new3.resx">
+      <DependentUpon>uc_card_new3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="popup_tu_van.resx">
       <DependentUpon>popup_tu_van.cs</DependentUpon>
@@ -334,6 +373,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\send.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logoapp.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
