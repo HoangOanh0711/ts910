@@ -42,7 +42,7 @@ namespace ts910.ChatBox
             server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
             server.Bind(iep);
-            server.Listen(10);// Đợi kết nối client trong 10s nếu ko có thì bỏ
+            server.Listen(100);// Đợi kết nối client trong 10s nếu ko có thì bỏ
 
             Thread acceptClient = new Thread(() =>
             {
