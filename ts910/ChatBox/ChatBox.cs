@@ -16,21 +16,20 @@ namespace ts910.ChatBox
 {
     public partial class ChatBox : Form
     {
+        UserInfo userInfo;
+
         SocketManager socket;
         String ipLocal;
-        String image = "Resources/user.png";
+        //String image = "Resources/user.png";
 
    
         string time = DateTime.Now.Hour.ToString() + ":" + DateTime.Now.Minute.ToString();
 
-        public ChatBox()
+        public ChatBox(UserInfo userInfo)
         {
             InitializeComponent();
-            
+            this.userInfo = userInfo;
             Connect();
-
-            flow_chat.Controls.Add(new uc_chat_admin("hello",image, time));
-            flow_chat.Controls.Add(new uc_chat_user("hi", image, time));
 
         }
 
@@ -47,8 +46,8 @@ namespace ts910.ChatBox
 
             //int date = DateTime.Now.Date;
             time = DateTime.Now.Hour.ToString() + ":" + DateTime.Now.Minute.ToString();
-            flow_chat.Controls.Add(new uc_chat_user(tb_nhap.Text, image, time));
-            socket.Send(new SocketData((int)SocketCommand.SEND_MESSAGE, tb_nhap.Text, image, time));
+            flow_chat.Controls.Add(new uc_chat_user(tb_nhap.Text, userInfo.Ava, time));
+            socket.Send(new SocketData((int)SocketCommand.SEND_MESSAGE, tb_nhap.Text, userInfo.Ava, time));
             tb_nhap.Text = "";
            
 

@@ -50,7 +50,7 @@
             this.tb_user.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_user.ForeColor = System.Drawing.Color.DimGray;
             this.tb_user.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tb_user.Location = new System.Drawing.Point(39, 11);
+            this.tb_user.Location = new System.Drawing.Point(99, 11);
             this.tb_user.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.tb_user.MaximumSize = new System.Drawing.Size(440, 0);
             this.tb_user.MinimumSize = new System.Drawing.Size(0, 50);
@@ -60,7 +60,7 @@
             this.tb_user.PlaceholderText = "";
             this.tb_user.ReadOnly = true;
             this.tb_user.SelectedText = "";
-            this.tb_user.Size = new System.Drawing.Size(440, 50);
+            this.tb_user.Size = new System.Drawing.Size(380, 50);
             this.tb_user.TabIndex = 3;
             this.tb_user.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 

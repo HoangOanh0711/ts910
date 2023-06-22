@@ -46,14 +46,13 @@
             // 
             // tb_admin
             // 
-            this.tb_admin.AcceptsReturn = true;
             this.tb_admin.AutoSize = true;
             this.tb_admin.BackColor = System.Drawing.Color.Transparent;
             this.tb_admin.BorderColor = System.Drawing.Color.Transparent;
             this.tb_admin.BorderRadius = 20;
             this.tb_admin.BorderThickness = 0;
             this.tb_admin.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tb_admin.DefaultText = "";
+            this.tb_admin.DefaultText = "abc";
             this.tb_admin.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.tb_admin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.tb_admin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -67,15 +66,14 @@
             this.tb_admin.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.tb_admin.MaximumSize = new System.Drawing.Size(440, 0);
             this.tb_admin.MinimumSize = new System.Drawing.Size(0, 50);
-            this.tb_admin.Multiline = true;
             this.tb_admin.Name = "tb_admin";
             this.tb_admin.PasswordChar = '\0';
             this.tb_admin.PlaceholderForeColor = System.Drawing.Color.DimGray;
             this.tb_admin.PlaceholderText = "";
             this.tb_admin.ReadOnly = true;
             this.tb_admin.SelectedText = "";
-            this.tb_admin.Size = new System.Drawing.Size(440, 50);
-            this.tb_admin.TabIndex = 1;
+            this.tb_admin.Size = new System.Drawing.Size(380, 50);
+            this.tb_admin.TabIndex = 3;
             // 
             // uc_chat_admin
             // 

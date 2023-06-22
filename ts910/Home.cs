@@ -8,6 +8,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ts910.ChatBox;
 
 namespace ts910
 {
@@ -24,6 +25,7 @@ namespace ts910
             int nHeightEllipse // width of ellipse
         );
 
+        UserInfo userInfo;
 
         public Home(UserInfo userInfo)
         {
@@ -36,6 +38,9 @@ namespace ts910
             drawer.Visible = false;
 
             lb_username.Text = userInfo.Hoten;
+            pb_ava.Image = Image.FromFile(userInfo.Ava);
+
+            this.userInfo = userInfo;
         }
 
         private void setSize()
@@ -189,6 +194,14 @@ namespace ts910
         private void header1_Click(object sender, EventArgs e)
         {
             timerDrawer.Start();
+        }
+
+        private void panel_tuvan_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ChatBox.ChatBox chatBox = new ChatBox.ChatBox(userInfo);
+            chatBox.ShowDialog();
+            this.Close();
         }
     }
 }
