@@ -19,8 +19,7 @@ namespace ts910
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new dang_nhap());
-            Application.Run(new dang_nhap());
+            Application.Run(new quen_mat_khau_sdt());
 
         }
     }
