@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dang_nhap));
             this.btn_dangky = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.tb_email = new Guna.UI2.WinForms.Guna2TextBox();
@@ -204,6 +205,7 @@
             this.Controls.Add(this.label12);
             this.Font = new System.Drawing.Font("Arial", 15.75F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "dang_nhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

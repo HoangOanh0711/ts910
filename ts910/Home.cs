@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ts910.ChatBox;
+using ts910.News;
 
 namespace ts910
 {
@@ -201,6 +202,22 @@ namespace ts910
             this.Hide();
             ChatBox.ChatBox chatBox = new ChatBox.ChatBox(userInfo);
             chatBox.ShowDialog();
+            this.Close();
+        }
+
+        private void panel_dangXuat_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            dang_nhap dang_Nhap = new dang_nhap();
+            dang_Nhap.ShowDialog();
+            this.Close();
+        }
+
+        private void panel_tinTuc_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            News_ListView news_ListView = new News_ListView();
+            news_ListView.ShowDialog();
             this.Close();
         }
     }
