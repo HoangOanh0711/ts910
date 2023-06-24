@@ -135,6 +135,12 @@
     <Compile Include="dang_nhap.Designer.cs">
       <DependentUpon>dang_nhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="doi_thong_tin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doi_thong_tin.Designer.cs">
+      <DependentUpon>doi_thong_tin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Footer.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -242,6 +248,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="dang_nhap.resx">
       <DependentUpon>dang_nhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doi_thong_tin.resx">
+      <DependentUpon>doi_thong_tin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Footer.resx">
       <DependentUpon>Footer.cs</DependentUpon>
@@ -394,6 +403,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logoapp.ico" />
+    <None Include="Resources\camera.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

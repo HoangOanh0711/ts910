@@ -220,5 +220,13 @@ namespace ts910
             news_ListView.ShowDialog();
             this.Close();
         }
+
+        private void pb_ava_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            doi_thong_tin doi_thong_tin = new doi_thong_tin(userInfo);
+            doi_thong_tin.ShowDialog();
+            this.Close();
+        }
     }
 }
