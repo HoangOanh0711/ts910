@@ -38,12 +38,14 @@
             this.tb_nhap = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.flow_chat = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back_chat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_send)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -92,6 +94,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.btn_send);
             this.panel2.Controls.Add(this.tb_nhap);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -114,7 +117,7 @@
             // tb_nhap
             // 
             this.tb_nhap.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.tb_nhap.BorderRadius = 30;
+            this.tb_nhap.BorderRadius = 25;
             this.tb_nhap.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tb_nhap.DefaultText = "";
             this.tb_nhap.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -125,14 +128,14 @@
             this.tb_nhap.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tb_nhap.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_nhap.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tb_nhap.Location = new System.Drawing.Point(6, 8);
+            this.tb_nhap.Location = new System.Drawing.Point(60, 8);
             this.tb_nhap.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.tb_nhap.Name = "tb_nhap";
             this.tb_nhap.PasswordChar = '\0';
             this.tb_nhap.PlaceholderForeColor = System.Drawing.Color.DarkGray;
             this.tb_nhap.PlaceholderText = "Nhắn tin";
             this.tb_nhap.SelectedText = "";
-            this.tb_nhap.Size = new System.Drawing.Size(483, 55);
+            this.tb_nhap.Size = new System.Drawing.Size(429, 55);
             this.tb_nhap.TabIndex = 0;
             // 
             // panel3
@@ -155,6 +158,16 @@
             this.flow_chat.Size = new System.Drawing.Size(546, 702);
             this.flow_chat.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ts910.Properties.Resources.icon;
+            this.pictureBox1.Location = new System.Drawing.Point(7, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(45, 45);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // ChatBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -174,6 +187,7 @@
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn_send)).EndInit();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -189,5 +203,6 @@
         private System.Windows.Forms.FlowLayoutPanel flow_chat;
         private Guna.UI2.WinForms.Guna2TextBox tb_nhap;
         private System.Windows.Forms.PictureBox btn_send;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

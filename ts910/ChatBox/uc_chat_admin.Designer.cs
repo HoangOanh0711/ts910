@@ -30,6 +30,7 @@
         {
             this.ava_admin = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.tb_admin = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lb_time = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ava_admin)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,12 +76,23 @@
             this.tb_admin.Size = new System.Drawing.Size(380, 50);
             this.tb_admin.TabIndex = 3;
             // 
+            // lb_time
+            // 
+            this.lb_time.AutoSize = true;
+            this.lb_time.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_time.Location = new System.Drawing.Point(455, 43);
+            this.lb_time.Name = "lb_time";
+            this.lb_time.Size = new System.Drawing.Size(48, 18);
+            this.lb_time.TabIndex = 5;
+            this.lb_time.Text = "17:00";
+            // 
             // uc_chat_admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.lb_time);
             this.Controls.Add(this.tb_admin);
             this.Controls.Add(this.ava_admin);
             this.MinimumSize = new System.Drawing.Size(546, 75);
@@ -96,5 +108,6 @@
 
         private Guna.UI2.WinForms.Guna2CirclePictureBox ava_admin;
         private Guna.UI2.WinForms.Guna2TextBox tb_admin;
+        private System.Windows.Forms.Label lb_time;
     }
 }

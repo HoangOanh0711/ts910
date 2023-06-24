@@ -26,11 +26,9 @@ namespace ts910.ChatBox
             Anh = Image.FromFile(anh);
 
         }
-        string time;
         public string Text { get => tb_admin.Text; set => tb_admin.Text = value; }
         public Image Anh { get => ava_admin.Image; set => ava_admin.Image = value; }
-
-        public string Time { get => time; set => time = value; }
+        public string Time { get => lb_time.Text; set => lb_time.Text = value; }
 
 
     }
