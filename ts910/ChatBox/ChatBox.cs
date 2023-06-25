@@ -38,8 +38,8 @@ namespace ts910.ChatBox
         private void guna2PictureBox2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            //Home home = new Home();
-            //home.ShowDialog();
+            Home home = new Home(userInfo);
+            home.ShowDialog();
             this.Close();
         }
 

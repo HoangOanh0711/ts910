@@ -75,7 +75,6 @@ namespace ts910
             this.timerDrawer = new System.Windows.Forms.Timer(this.components);
             this.contact1 = new ts910.Contact();
             this.header1 = new ts910.Header();
-            this.news_in_Home1 = new ts910.News.News_in_Home();
             this.footer2 = new ts910.Footer();
             this.footer1 = new ts910.Footer();
             this.guna2Panel1.SuspendLayout();
@@ -726,14 +725,6 @@ namespace ts910
             this.header1.TabIndex = 13;
             this.header1.Click += new System.EventHandler(this.header1_Click);
             // 
-            // news_in_Home1
-            // 
-            this.news_in_Home1.Location = new System.Drawing.Point(36, 870);
-            this.news_in_Home1.Margin = new System.Windows.Forms.Padding(2);
-            this.news_in_Home1.Name = "news_in_Home1";
-            this.news_in_Home1.Size = new System.Drawing.Size(463, 548);
-            this.news_in_Home1.TabIndex = 12;
-            // 
             // footer2
             // 
             this.footer2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -771,7 +762,6 @@ namespace ts910
             this.Controls.Add(this.label2);
             this.Controls.Add(this.contact1);
             this.Controls.Add(this.header1);
-            this.Controls.Add(this.news_in_Home1);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.footer2);
             this.Controls.Add(this.footer1);
@@ -824,7 +814,6 @@ namespace ts910
         private Footer footer1;
         private Footer footer2;
         private System.Windows.Forms.Label label8;
-        private News.News_in_Home news_in_Home1;
         private Header header1;
         private Guna.UI2.WinForms.Guna2GradientButton btn_submit;
         private Contact contact1;
