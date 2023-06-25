@@ -60,9 +60,10 @@
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(155, 524);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 22);
+            this.label8.Size = new System.Drawing.Size(54, 22);
             this.label8.TabIndex = 38;
-            this.label8.Text = "HOẶC";
+            this.label8.Text = "Hoặc";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // tb_email
             // 

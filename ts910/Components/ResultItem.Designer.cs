@@ -42,12 +42,12 @@
             this.panel13 = new System.Windows.Forms.Panel();
             this.lb_year = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.lk_schoolname = new System.Windows.Forms.LinkLabel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.lb_address = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lk_schoolname = new System.Windows.Forms.LinkLabel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.lb_index = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel18.SuspendLayout();
             this.panel17.SuspendLayout();
@@ -56,9 +56,9 @@
             this.panel14.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel12.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel11.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -115,6 +115,7 @@
             this.cb_isChoose.UncheckedState.BorderRadius = 2;
             this.cb_isChoose.UncheckedState.BorderThickness = 0;
             this.cb_isChoose.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.cb_isChoose.Click += new System.EventHandler(this.cb_isChoose_Click);
             // 
             // panel17
             // 
@@ -221,6 +222,32 @@
             this.panel12.Size = new System.Drawing.Size(241, 69);
             this.panel12.TabIndex = 9;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.lb_address);
+            this.panel2.Location = new System.Drawing.Point(3, 37);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(235, 30);
+            this.panel2.TabIndex = 5;
+            // 
+            // lb_address
+            // 
+            this.lb_address.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lb_address.Location = new System.Drawing.Point(0, 0);
+            this.lb_address.Name = "lb_address";
+            this.lb_address.Size = new System.Drawing.Size(235, 30);
+            this.lb_address.TabIndex = 2;
+            this.lb_address.Text = "235 Nguyễn Văn Cừ,Phường 4,Quận 5";
+            this.lb_address.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.lk_schoolname);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(235, 30);
+            this.panel1.TabIndex = 4;
+            // 
             // lk_schoolname
             // 
             this.lk_schoolname.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -232,16 +259,7 @@
             this.lk_schoolname.TabStop = true;
             this.lk_schoolname.Text = "THPT Lê Hồng Phong ";
             this.lk_schoolname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lb_address
-            // 
-            this.lb_address.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lb_address.Location = new System.Drawing.Point(0, 0);
-            this.lb_address.Name = "lb_address";
-            this.lb_address.Size = new System.Drawing.Size(235, 30);
-            this.lb_address.TabIndex = 2;
-            this.lb_address.Text = "235 Nguyễn Văn Cừ,Phường 4,Quận 5";
-            this.lb_address.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lk_schoolname.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lk_schoolname_LinkClicked);
             // 
             // panel11
             // 
@@ -261,27 +279,12 @@
             this.lb_index.TabIndex = 1;
             this.lb_index.Text = "1";
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.lk_schoolname);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(235, 30);
-            this.panel1.TabIndex = 4;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.lb_address);
-            this.panel2.Location = new System.Drawing.Point(3, 37);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(235, 30);
-            this.panel2.TabIndex = 5;
-            // 
             // ResultItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.Name = "ResultItem";
             this.Size = new System.Drawing.Size(530, 76);
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -292,10 +295,10 @@
             this.panel14.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

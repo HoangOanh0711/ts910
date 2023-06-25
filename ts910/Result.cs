@@ -22,17 +22,21 @@ namespace ts910
         string sum;
         int type, subject;
 
-        public Result(string sum, int type, int subject)
+        UserInfo userInfo;
+
+        public Result(string sum, int type, int subject, UserInfo userInfo)
         {
             InitializeComponent();
             this.sum = sum;
             this.type = type;
             this.subject = subject;
+            this.userInfo = userInfo;
+            label9.Text = userInfo.Hoten;
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("http://www.thpt-lehongphong-tphcm.edu.vn/");
+            
         }
 
         private void Result_Load(object sender, EventArgs e)
@@ -65,6 +69,7 @@ namespace ts910
             for (int row = 4; row <= ws.UsedRange.Rows.Count; ++row)//đọc row hiện có trong Excel
             {
                 Range schoolName = ws.Range[$"B{row}"];
+                Range weblink = ws.Range[$"Z{row}"];
                 Range address = ws.Range[$"H{row}"];
                 Range year = ws.Range[$"K{row}"];
                 Range studentNumber = ws.Range[$"M{row}"];
@@ -72,17 +77,18 @@ namespace ts910
                 Range nv2 = ws.Range[$"P{row}"];
                 Range nv3 = ws.Range[$"Q{row}"];
 
-                AddResultItem(row - 3, schoolName.Text, address.Text, year.Text, studentNumber.Text, nv1.Text, nv2.Text, nv3.Text);
+                AddResultItem(row - 3, schoolName.Text, weblink.Text, address.Text, year.Text, studentNumber.Text, nv1.Text, nv2.Text, nv3.Text);
 
             }
         }
 
-        private void AddResultItem (int index, string schoolName, string address, string year, string studentNumber, string nv1, string nv2, string nv3)
+        private void AddResultItem (int index, string schoolName, string weblink, string address, string year, string studentNumber, string nv1, string nv2, string nv3)
         {
             flowLayoutPanel1.Controls.Add(new ResultItem()
             {
                 index = index,
                 schoolName = schoolName,
+                weblink = weblink,
                 address = address,
                 year = year,
                 studentNumber = studentNumber,
@@ -90,6 +96,16 @@ namespace ts910
                 nv2 = nv2,
                 nv3 = nv3
             });
+        }
+
+
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+
+            History history = new History(userInfo);
+            history.Show();
+            this.Close();
         }
 
         private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)

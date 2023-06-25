@@ -52,5 +52,10 @@ namespace ts910
             this.Close();
 
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

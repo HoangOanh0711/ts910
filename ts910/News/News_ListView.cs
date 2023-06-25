@@ -13,7 +13,10 @@ namespace ts910.News
 {
     public partial class News_ListView : Form
     {
+        UserInfo userInfo;
+
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+
         private static extern IntPtr CreateRoundRectRgn
         (
             int nLeftRect,     // x-coordinate of upper-left corner
@@ -23,11 +26,12 @@ namespace ts910.News
             int nWidthEllipse, // height of ellipse
             int nHeightEllipse // width of ellipse
         );
-        public News_ListView()
+        public News_ListView(UserInfo userInfo)
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+            this.userInfo = userInfo;
         }
         public void AddItem(string title, string ndung, string anh)
         {
@@ -59,8 +63,8 @@ namespace ts910.News
         private void guna2PictureBox2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            //Home home = new Home();
-            //home.ShowDialog();
+            Home home = new Home(userInfo);
+            home.ShowDialog();
             this.Close();
         }
 

@@ -111,6 +111,12 @@
     <Compile Include="ChatBox\uc_chat_admin.Designer.cs">
       <DependentUpon>uc_chat_admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Components\HistoryItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\HistoryItem.Designer.cs">
+      <DependentUpon>HistoryItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\ResultItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -152,6 +158,12 @@
     </Compile>
     <Compile Include="Header.Designer.cs">
       <DependentUpon>Header.cs</DependentUpon>
+    </Compile>
+    <Compile Include="History.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="History.Designer.cs">
+      <DependentUpon>History.cs</DependentUpon>
     </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
@@ -237,6 +249,9 @@
     <EmbeddedResource Include="ChatBox\uc_chat_admin.resx">
       <DependentUpon>uc_chat_admin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Components\HistoryItem.resx">
+      <DependentUpon>HistoryItem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Components\ResultItem.resx">
       <DependentUpon>ResultItem.cs</DependentUpon>
     </EmbeddedResource>
@@ -257,6 +272,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Header.resx">
       <DependentUpon>Header.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="History.resx">
+      <DependentUpon>History.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
