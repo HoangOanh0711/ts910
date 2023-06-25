@@ -399,9 +399,8 @@
             // flow_chat
             // 
             this.flow_chat.BackColor = System.Drawing.Color.Transparent;
-            this.flow_chat.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flow_chat.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flow_chat.Location = new System.Drawing.Point(0, 0);
+            this.flow_chat.Location = new System.Drawing.Point(36, 51);
             this.flow_chat.Name = "flow_chat";
             this.flow_chat.Size = new System.Drawing.Size(546, 549);
             this.flow_chat.TabIndex = 0;
@@ -453,8 +452,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox btn_back_chat;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.FlowLayoutPanel flow_chat;
         private Guna.UI2.WinForms.Guna2TextBox tb_nhap;
         private System.Windows.Forms.PictureBox btn_send;
         private System.Windows.Forms.PictureBox pb_icon;
@@ -474,5 +471,7 @@
         private System.Windows.Forms.PictureBox icon3;
         private System.Windows.Forms.PictureBox icon2;
         private System.Windows.Forms.PictureBox icon1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.FlowLayoutPanel flow_chat;
     }
 }

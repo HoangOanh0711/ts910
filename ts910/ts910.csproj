@@ -111,6 +111,18 @@
     <Compile Include="ChatBox\uc_chat_admin.Designer.cs">
       <DependentUpon>uc_chat_admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChatBox\uc_icon_admin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChatBox\uc_icon_admin.Designer.cs">
+      <DependentUpon>uc_icon_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChatBox\uc_icon_user.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChatBox\uc_icon_user.Designer.cs">
+      <DependentUpon>uc_icon_user.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\HistoryItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -248,6 +260,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChatBox\uc_chat_admin.resx">
       <DependentUpon>uc_chat_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatBox\uc_icon_admin.resx">
+      <DependentUpon>uc_icon_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatBox\uc_icon_user.resx">
+      <DependentUpon>uc_icon_user.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Components\HistoryItem.resx">
       <DependentUpon>HistoryItem.cs</DependentUpon>

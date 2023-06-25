@@ -23,7 +23,7 @@ namespace ts910.ChatBox
         String ipLocal;
         //String image = "Resources/user.png";
         bool isShow = false;
-
+        string pathIcon;
    
         string time = DateTime.Now.Hour.ToString() + ":" + DateTime.Now.Minute.ToString();
 
@@ -190,26 +190,79 @@ namespace ts910.ChatBox
 
             switch (buttonTag)
             {
-                //case 0:
+                case 1:
+                    pathIcon = "Resources/angel.png";
+                    flow_chat.Controls.Add(new uc_icon_user(userInfo.Ava, pathIcon,time));
+                    break;
+                case 2:
+                    pathIcon = "Resources/happy (1).png";
+                    flow_chat.Controls.Add(new uc_icon_user(userInfo.Ava, pathIcon, time));
+                    break;
+                case 3:
+                    pathIcon = "Resources/laughing (1).png";
+                    flow_chat.Controls.Add(new uc_icon_user(userInfo.Ava, pathIcon, time));
+                    break;
+                case 4:
+                    pathIcon = "Resources/savoring-food.png";
+                    flow_chat.Controls.Add(new uc_icon_user(userInfo.Ava, pathIcon, time));
+                    break;
+
+                case 5:
+                    pathIcon = "Resources/clown.png";
+                    flow_chat.Controls.Add(new uc_icon_user(userInfo.Ava, pathIcon, time));
+                    break;
+
+                case 6:
+                    pathIcon = "Resources/sad.png";
+                    flow_chat.Controls.Add(new uc_icon_user(userInfo.Ava, pathIcon, time));
+                    break;
+
+                case 7:
+                    pathIcon = "Resources/crying.png";
+                    flow_chat.Controls.Add(new uc_icon_user(userInfo.Ava, pathIcon, time));
+                    break;
+
+                case 8:
+                    pathIcon = "Resources/sad (1).png";
+                    flow_chat.Controls.Add(new uc_icon_user(userInfo.Ava, pathIcon, time));
+                    break;
+
+                case 9:
+                    pathIcon = "Resources/scared.png";
+                    flow_chat.Controls.Add(new uc_icon_user(userInfo.Ava, pathIcon, time));
+                    break;
+
+                case 10:
+                    pathIcon = "Resources/dead.png";
+                    flow_chat.Controls.Add(new uc_icon_user(userInfo.Ava, pathIcon, time));
+                    break;
+
+                case 11:
+                    pathIcon = "Resources/shocked.png";
+                    flow_chat.Controls.Add(new uc_icon_user(userInfo.Ava, pathIcon, time));
+                    break;
+                
+                case 12:
+                    pathIcon = "Resources/angry.png";
+                    flow_chat.Controls.Add(new uc_icon_user(userInfo.Ava, pathIcon, time));
+                    break;
+                
+                case 13:
+                    pathIcon = "Resources/neutral.png";
+                    flow_chat.Controls.Add(new uc_icon_user(userInfo.Ava, pathIcon, time));
+                    break;
+                
+                case 14:
+                    pathIcon = "Resources/cry.png";
+                    flow_chat.Controls.Add(new uc_icon_user(userInfo.Ava, pathIcon, time));
+                    break;
+
+                case 15:
+                    pathIcon = "Resources/devil.png";
+                    flow_chat.Controls.Add(new uc_icon_user(userInfo.Ava, pathIcon, time));
+                    break;
+
             }
-            //"Resources/angel.png"
-            //"Resources/happy (1).png"
-            //"Resources/laughing (1).png"
-            //"Resources/angry.png"
-            //"Resources/clown.png"
-            //"Resources/cry.png"
-            //"Resources/crying.png"
-
-            //"Resources/dead.png"
-            //"Resources/devil.png"
-            //"Resources/happy (1).png"
-            //"Resources/neutral.png"
-            //"Resources/sad (1).png"
-            //"Resources/sad.png"
-            //"Resources/savoring-food.png"
-
-            //"Resources/scared.png"
-            //"Resources/shocked.png"
         }
     }
 }
