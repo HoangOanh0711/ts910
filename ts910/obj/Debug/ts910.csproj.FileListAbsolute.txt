@@ -65,3 +65,5 @@ G:\Oanhhh\c#\ts910\ts910\obj\Debug\ts910.ChatBox.uc_chat_hotline.resources
 G:\Oanhhh\c#\ts910\ts910\obj\Debug\ts910.ChatBox.uc_chat_user.resources
 G:\Oanhhh\c#\ts910\ts910\obj\Debug\ts910.Components.ResultItem.resources
 G:\Oanhhh\c#\ts910\ts910\obj\Debug\ts910.Result.resources
+E:\STUDY\C#\LT\ts910\ts910\obj\Debug\ts910.Components.HistoryItem.resources
+E:\STUDY\C#\LT\ts910\ts910\obj\Debug\ts910.History.resources

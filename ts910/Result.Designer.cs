@@ -330,6 +330,7 @@
             this.guna2GradientButton1.Size = new System.Drawing.Size(180, 45);
             this.guna2GradientButton1.TabIndex = 3;
             this.guna2GradientButton1.Text = "Lưu kết quả";
+            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
             // panel20
             // 
@@ -430,52 +431,108 @@
             // 
             // resultItem1
             // 
+            this.resultItem1.address = "235 Nguyễn Văn Cừ,Phường 4,Quận 5";
+            this.resultItem1.index = 0;
             this.resultItem1.Location = new System.Drawing.Point(3, 3);
             this.resultItem1.Name = "resultItem1";
+            this.resultItem1.nv1 = "30";
+            this.resultItem1.nv2 = "30";
+            this.resultItem1.nv3 = "30";
+            this.resultItem1.schoolName = "THPT Lê Hồng Phong ";
             this.resultItem1.Size = new System.Drawing.Size(530, 76);
+            this.resultItem1.studentNumber = "300";
             this.resultItem1.TabIndex = 0;
+            this.resultItem1.year = "2022";
             // 
             // resultItem2
             // 
+            this.resultItem2.address = "235 Nguyễn Văn Cừ,Phường 4,Quận 5";
+            this.resultItem2.index = 0;
             this.resultItem2.Location = new System.Drawing.Point(3, 85);
             this.resultItem2.Name = "resultItem2";
+            this.resultItem2.nv1 = "30";
+            this.resultItem2.nv2 = "30";
+            this.resultItem2.nv3 = "30";
+            this.resultItem2.schoolName = "THPT Lê Hồng Phong ";
             this.resultItem2.Size = new System.Drawing.Size(530, 76);
+            this.resultItem2.studentNumber = "300";
             this.resultItem2.TabIndex = 1;
+            this.resultItem2.year = "2022";
             // 
             // resultItem3
             // 
+            this.resultItem3.address = "235 Nguyễn Văn Cừ,Phường 4,Quận 5";
+            this.resultItem3.index = 0;
             this.resultItem3.Location = new System.Drawing.Point(3, 167);
             this.resultItem3.Name = "resultItem3";
+            this.resultItem3.nv1 = "30";
+            this.resultItem3.nv2 = "30";
+            this.resultItem3.nv3 = "30";
+            this.resultItem3.schoolName = "THPT Lê Hồng Phong ";
             this.resultItem3.Size = new System.Drawing.Size(530, 76);
+            this.resultItem3.studentNumber = "300";
             this.resultItem3.TabIndex = 2;
+            this.resultItem3.year = "2022";
             // 
             // resultItem4
             // 
+            this.resultItem4.address = "235 Nguyễn Văn Cừ,Phường 4,Quận 5";
+            this.resultItem4.index = 0;
             this.resultItem4.Location = new System.Drawing.Point(3, 249);
             this.resultItem4.Name = "resultItem4";
+            this.resultItem4.nv1 = "30";
+            this.resultItem4.nv2 = "30";
+            this.resultItem4.nv3 = "30";
+            this.resultItem4.schoolName = "THPT Lê Hồng Phong ";
             this.resultItem4.Size = new System.Drawing.Size(530, 76);
+            this.resultItem4.studentNumber = "300";
             this.resultItem4.TabIndex = 3;
+            this.resultItem4.year = "2022";
             // 
             // resultItem5
             // 
+            this.resultItem5.address = "235 Nguyễn Văn Cừ,Phường 4,Quận 5";
+            this.resultItem5.index = 0;
             this.resultItem5.Location = new System.Drawing.Point(3, 331);
             this.resultItem5.Name = "resultItem5";
+            this.resultItem5.nv1 = "30";
+            this.resultItem5.nv2 = "30";
+            this.resultItem5.nv3 = "30";
+            this.resultItem5.schoolName = "THPT Lê Hồng Phong ";
             this.resultItem5.Size = new System.Drawing.Size(530, 76);
+            this.resultItem5.studentNumber = "300";
             this.resultItem5.TabIndex = 4;
+            this.resultItem5.year = "2022";
             // 
             // resultItem6
             // 
+            this.resultItem6.address = "235 Nguyễn Văn Cừ,Phường 4,Quận 5";
+            this.resultItem6.index = 0;
             this.resultItem6.Location = new System.Drawing.Point(3, 413);
             this.resultItem6.Name = "resultItem6";
+            this.resultItem6.nv1 = "30";
+            this.resultItem6.nv2 = "30";
+            this.resultItem6.nv3 = "30";
+            this.resultItem6.schoolName = "THPT Lê Hồng Phong ";
             this.resultItem6.Size = new System.Drawing.Size(530, 76);
+            this.resultItem6.studentNumber = "300";
             this.resultItem6.TabIndex = 5;
+            this.resultItem6.year = "2022";
             // 
             // resultItem7
             // 
+            this.resultItem7.address = "235 Nguyễn Văn Cừ,Phường 4,Quận 5";
+            this.resultItem7.index = 0;
             this.resultItem7.Location = new System.Drawing.Point(3, 495);
             this.resultItem7.Name = "resultItem7";
+            this.resultItem7.nv1 = "30";
+            this.resultItem7.nv2 = "30";
+            this.resultItem7.nv3 = "30";
+            this.resultItem7.schoolName = "THPT Lê Hồng Phong ";
             this.resultItem7.Size = new System.Drawing.Size(530, 76);
+            this.resultItem7.studentNumber = "300";
             this.resultItem7.TabIndex = 6;
+            this.resultItem7.year = "2022";
             // 
             // Result
             // 

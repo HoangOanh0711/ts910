@@ -16,6 +16,7 @@ namespace ts910
     public partial class dang_nhap : Form
     {
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+
         private static extern IntPtr CreateRoundRectRgn
         (
             int nLeftRect,     // x-coordinate of upper-left corner
@@ -90,6 +91,11 @@ namespace ts910
                 wb.Close();
                 MessageBox.Show("Tài khoản không tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void dang_nhap_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
