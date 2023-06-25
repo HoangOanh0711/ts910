@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 using System.Net.NetworkInformation;
+using Guna.UI2.WinForms;
 
 namespace ts910.ChatBox
 {
@@ -21,6 +22,7 @@ namespace ts910.ChatBox
         SocketManager socket;
         String ipLocal;
         //String image = "Resources/user.png";
+        bool isShow = false;
 
    
         string time = DateTime.Now.Hour.ToString() + ":" + DateTime.Now.Minute.ToString();
@@ -30,7 +32,7 @@ namespace ts910.ChatBox
             InitializeComponent();
             this.userInfo = userInfo;
             Connect();
-
+            setSize1();
         }
 
         private void guna2PictureBox2_Click(object sender, EventArgs e)
@@ -39,6 +41,27 @@ namespace ts910.ChatBox
             //Home home = new Home();
             //home.ShowDialog();
             this.Close();
+        }
+
+        private void setSize1()
+        {
+            panel2.Size = new System.Drawing.Size(546, 74);
+            pb_icon.Location = new System.Drawing.Point(7, 13);
+            tb_nhap.Location = new System.Drawing.Point(60, 8);
+            btn_send.Location = new System.Drawing.Point(494, 13);
+            panel_icon.Visible = false;
+            isShow = false;
+        }
+
+        private void setSize2()
+        {
+            panel2.Size = new System.Drawing.Size(546, 227);
+            pb_icon.Location = new System.Drawing.Point(7, 165);
+            tb_nhap.Location = new System.Drawing.Point(60, 160);
+            btn_send.Location = new System.Drawing.Point(494, 165);
+            panel_icon.Visible = true;
+            isShow = true;
+            panel_icon.Location = new System.Drawing.Point(7, 7);
         }
 
         private void btn_send_Click(object sender, EventArgs e)
@@ -149,6 +172,44 @@ namespace ts910.ChatBox
 
             ListenThread.IsBackground = true;
             ListenThread.Start();
+        }
+
+        private void pb_icon_Click(object sender, EventArgs e)
+        {
+            if (isShow == false)
+            {
+                setSize2();
+            }
+            else { setSize1(); }
+        }
+
+        private void iconClick(object sender, EventArgs e)
+        {
+            var senderObject = (PictureBox)sender;
+            int buttonTag = Convert.ToInt32(senderObject.Tag);
+
+            switch (buttonTag)
+            {
+                //case 0:
+            }
+            //"Resources/angel.png"
+            //"Resources/happy (1).png"
+            //"Resources/laughing (1).png"
+            //"Resources/angry.png"
+            //"Resources/clown.png"
+            //"Resources/cry.png"
+            //"Resources/crying.png"
+
+            //"Resources/dead.png"
+            //"Resources/devil.png"
+            //"Resources/happy (1).png"
+            //"Resources/neutral.png"
+            //"Resources/sad (1).png"
+            //"Resources/sad.png"
+            //"Resources/savoring-food.png"
+
+            //"Resources/scared.png"
+            //"Resources/shocked.png"
         }
     }
 }

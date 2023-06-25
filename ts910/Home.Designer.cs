@@ -121,7 +121,7 @@ namespace ts910
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
             this.guna2Panel1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Panel1.Location = new System.Drawing.Point(-93, 274);
+            this.guna2Panel1.Location = new System.Drawing.Point(-102, 274);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Padding = new System.Windows.Forms.Padding(15, 16, 15, 16);
@@ -695,14 +695,14 @@ namespace ts910
             this.pictureBox1.Location = new System.Drawing.Point(0, 97);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(377, 177);
+            this.pictureBox1.Size = new System.Drawing.Size(360, 177);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
             // timerDrawer
             // 
-            this.timerDrawer.Interval = 50;
+            this.timerDrawer.Interval = 1;
             this.timerDrawer.Tick += new System.EventHandler(this.timerDrawer_Tick);
             // 
             // contact1
@@ -722,7 +722,7 @@ namespace ts910
             this.header1.Location = new System.Drawing.Point(0, 0);
             this.header1.Margin = new System.Windows.Forms.Padding(2);
             this.header1.Name = "header1";
-            this.header1.Size = new System.Drawing.Size(377, 96);
+            this.header1.Size = new System.Drawing.Size(360, 96);
             this.header1.TabIndex = 13;
             this.header1.Click += new System.EventHandler(this.header1_Click);
             // 
@@ -743,7 +743,7 @@ namespace ts910
             this.footer2.Margin = new System.Windows.Forms.Padding(1);
             this.footer2.Name = "footer2";
             this.footer2.Padding = new System.Windows.Forms.Padding(15, 32, 15, 32);
-            this.footer2.Size = new System.Drawing.Size(380, 400);
+            this.footer2.Size = new System.Drawing.Size(363, 400);
             this.footer2.TabIndex = 8;
             // 
             // footer1
@@ -751,7 +751,7 @@ namespace ts910
             this.footer1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.footer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(63)))));
-            this.footer1.Location = new System.Drawing.Point(19, 30680);
+            this.footer1.Location = new System.Drawing.Point(19, 32086);
             this.footer1.Margin = new System.Windows.Forms.Padding(1);
             this.footer1.Name = "footer1";
             this.footer1.Padding = new System.Windows.Forms.Padding(15, 32, 15, 32);

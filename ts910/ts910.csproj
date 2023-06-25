@@ -403,6 +403,21 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logoapp.ico" />
+    <None Include="Resources\devil.png" />
+    <None Include="Resources\cry.png" />
+    <None Include="Resources\neutral.png" />
+    <None Include="Resources\angry.png" />
+    <None Include="Resources\shocked.png" />
+    <None Include="Resources\dead.png" />
+    <None Include="Resources\scared.png" />
+    <None Include="Resources\sad %281%29.png" />
+    <None Include="Resources\crying.png" />
+    <None Include="Resources\sad.png" />
+    <None Include="Resources\clown.png" />
+    <None Include="Resources\savoring-food.png" />
+    <None Include="Resources\laughing %281%29.png" />
+    <None Include="Resources\happy %281%29.png" />
+    <None Include="Resources\angel.png" />
     <None Include="Resources\camera.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
