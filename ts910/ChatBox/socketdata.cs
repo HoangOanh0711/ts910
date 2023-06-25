@@ -17,7 +17,7 @@ namespace ts910.ChatBox
             set { command = value; }
         }
 
-        private string message,image,time;
+        private string message, image, time, pathIcon;
 
         public string Message
         {
@@ -37,6 +37,12 @@ namespace ts910.ChatBox
             set { time = value; }
         }
 
+        public string PathIcon
+        {
+            get { return pathIcon; }
+            set { pathIcon = value; }
+        }
+
         public SocketData(int command, string message, string image, string time)
         {
             this.Command = command;
@@ -44,11 +50,18 @@ namespace ts910.ChatBox
             this.Image = image;
             this.Time = time;
         }
+        public SocketData(int command, string pathIcon, string time)
+        {
+            this.Command = command;
+            this.PathIcon = pathIcon;
+            this.Time = time;
+        }
     }
 
     public enum SocketCommand
     {
         QUIT,
-        SEND_MESSAGE
+        SEND_MESSAGE,
+        SEND_ICON
     }
 }

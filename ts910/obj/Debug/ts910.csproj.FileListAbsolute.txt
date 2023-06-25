@@ -162,3 +162,14 @@ G:\Oanhhh\c#\ts910\ts910\obj\Debug\ts910.Components.HistoryItem.resources
 G:\Oanhhh\c#\ts910\ts910\obj\Debug\ts910.History.resources
 G:\Oanhhh\c#\ts910\ts910\obj\Debug\ts910.ChatBox.uc_icon_admin.resources
 G:\Oanhhh\c#\ts910\ts910\obj\Debug\ts910.ChatBox.uc_icon_user.resources
+D:\Project\c#\ts910\ts910\obj\Debug\ts910.ChatBox.uc_icon_admin.resources
+D:\Project\c#\ts910\ts910\obj\Debug\ts910.ChatBox.uc_icon_user.resources
+D:\Project\c#\ts910\ts910\obj\Debug\ts910.Components.HistoryItem.resources
+D:\Project\c#\ts910\ts910\obj\Debug\ts910.doi_thong_tin.resources
+D:\Project\c#\ts910\ts910\obj\Debug\ts910.History.resources
+D:\Project\c#\ts910\ts910\obj\Debug\ts910.News.Card_New.resources
+D:\Project\c#\ts910\ts910\obj\Debug\ts910.News.uc_card_new1.resources
+D:\Project\c#\ts910\ts910\obj\Debug\ts910.News.uc_card_new2.resources
+D:\Project\c#\ts910\ts910\obj\Debug\ts910.News.uc_card_new3.resources
+D:\Project\c#\ts910\ts910\obj\Debug\ts910.quen_mat_khau.resources
+D:\Project\c#\ts910\ts910\obj\Debug\ts910.quen_mat_khau_sdt.resources

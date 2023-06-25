@@ -116,6 +116,7 @@
             this.btn_dangnhap.TabIndex = 28;
             this.btn_dangnhap.Text = "ĐĂNG NHẬP";
             this.btn_dangnhap.Click += new System.EventHandler(this.btn_dangnhap_Click);
+            this.btn_dangnhap.Enter += new System.EventHandler(this.btn_dangnhap_Click);
             // 
             // label9
             // 

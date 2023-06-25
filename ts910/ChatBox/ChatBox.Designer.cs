@@ -398,12 +398,15 @@
             // 
             // flow_chat
             // 
+            this.flow_chat.AutoScroll = true;
+            this.flow_chat.AutoScrollMargin = new System.Drawing.Size(10, 0);
             this.flow_chat.BackColor = System.Drawing.Color.Transparent;
             this.flow_chat.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flow_chat.Location = new System.Drawing.Point(36, 51);
+            this.flow_chat.Location = new System.Drawing.Point(3, 3);
             this.flow_chat.Name = "flow_chat";
-            this.flow_chat.Size = new System.Drawing.Size(546, 549);
+            this.flow_chat.Size = new System.Drawing.Size(540, 702);
             this.flow_chat.TabIndex = 0;
+            this.flow_chat.WrapContents = false;
             // 
             // ChatBox
             // 

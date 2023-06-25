@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using System.Threading;
 using System.Net.NetworkInformation;
 using Guna.UI2.WinForms;
+using static System.Collections.Specialized.BitVector32;
 
 namespace ts910.ChatBox
 {
@@ -24,8 +25,8 @@ namespace ts910.ChatBox
         //String image = "Resources/user.png";
         bool isShow = false;
         string pathIcon;
-   
-        string time = DateTime.Now.Hour.ToString() + ":" + DateTime.Now.Minute.ToString();
+
+        string time = (DateTime.Now.Hour.ToString().Length < 2 ? "0" + DateTime.Now.Hour.ToString() : DateTime.Now.Hour.ToString()) + ":" + (DateTime.Now.Minute.ToString().Length < 2 ? "0" + DateTime.Now.Minute.ToString() : DateTime.Now.Minute.ToString());
 
         public ChatBox(UserInfo userInfo)
         {
@@ -66,31 +67,18 @@ namespace ts910.ChatBox
 
         private void btn_send_Click(object sender, EventArgs e)
         {
-
-            //int date = DateTime.Now.Date;
-            time = DateTime.Now.Hour.ToString() + ":" + DateTime.Now.Minute.ToString();
+            time = (DateTime.Now.Hour.ToString().Length < 2 ? "0" + DateTime.Now.Hour.ToString() : DateTime.Now.Hour.ToString()) + ":" + (DateTime.Now.Minute.ToString().Length<2?"0"+ DateTime.Now.Minute.ToString(): DateTime.Now.Minute.ToString());
             flow_chat.Controls.Add(new uc_chat_user(tb_nhap.Text, userInfo.Ava, time));
             socket.Send(new SocketData((int)SocketCommand.SEND_MESSAGE, tb_nhap.Text, userInfo.Ava, time));
             tb_nhap.Text = "";
-           
 
-            //if (socket.IsServer == true)
-            //{
-            //    flow_chat.Controls.Add(new uc_chat_user(tb_nhap.Text,""));
-            //    tb_nhap.Text = "";
-            //    socket.Send(new SocketData((int)SocketCommand.SEND_MESSAGE, tb_nhap.Text,""));
-            //}
-            //else
-            //{
-            //    flow_chat.Controls.Add(new uc_chat_admin(tb_nhap.Text,""));
-            //    tb_nhap.Text = "";
-            //    socket.Send(new SocketData((int)SocketCommand.SEND_MESSAGE, tb_nhap.Text,""));
-            //}
+
             Listen();
 
         }
 
         delegate void SetTextCallback(Form f, Control ctrl, string text, string anh, string time);
+        delegate void SetIconCallback(Form f, Control ctrl, string anh, string icon, string time);
 
         public static void SetText(Form form, Control ctrl, string text, string anh, string time)
         {
@@ -102,6 +90,18 @@ namespace ts910.ChatBox
             else
             {
                 ctrl.Controls.Add(new uc_chat_admin(text, anh, time));
+            }
+        }
+        public static void SetIcon(Form form, Control ctrl, string anh, string icon, string time)
+        {
+            if (ctrl.InvokeRequired)
+            {
+                SetIconCallback d = new SetIconCallback(SetIcon);
+                form.Invoke(d, new object[] { form, ctrl, anh, icon, time });
+            }
+            else
+            {
+                ctrl.Controls.Add(new uc_icon_admin(anh, icon, time));
             }
         }
 
@@ -120,7 +120,14 @@ namespace ts910.ChatBox
                         MessageBox.Show("Kết thúc cuộc trò chuyện", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }));
                     break;
-
+                case (int)SocketCommand.SEND_ICON:
+                    /*this.Invoke((MethodInvoker)(() =>
+                    {
+                        
+                    }));*/
+                    SetIcon(this, flow_chat, userInfo.Ava, data.PathIcon, data.Time);
+                    //flow_chat.Controls.Add(new uc_icon_admin(userInfo.Ava, data.PathIcon, data.Time));
+                    break;
 
                 default:
                     break;
@@ -138,23 +145,18 @@ namespace ts910.ChatBox
                 ipLocal = socket.GetLocalIPv4(NetworkInterfaceType.Ethernet);
 
             socket.IP = ipLocal;
- 
+
             if (!socket.ConnectServer())
             {
                 socket.IsServer = true;
                 socket.CreateServer();
                 label1.Text = "server";
-                //MessageBox.Show("Bạn đang là Server", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //name1.Text = name;
-               
             }
             else
             {
                 socket.IsServer = false;
                 Listen();
                 label1.Text = "client";
-                //MessageBox.Show("Kết nối thành công !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //name2.Text = name;
             }
         }
 
@@ -187,82 +189,72 @@ namespace ts910.ChatBox
         {
             var senderObject = (PictureBox)sender;
             int buttonTag = Convert.ToInt32(senderObject.Tag);
+            time = (DateTime.Now.Hour.ToString().Length < 2 ? "0" + DateTime.Now.Hour.ToString() : DateTime.Now.Hour.ToString()) + ":" + (DateTime.Now.Minute.ToString().Length < 2 ? "0" + DateTime.Now.Minute.ToString() : DateTime.Now.Minute.ToString());
 
             switch (buttonTag)
             {
                 case 1:
                     pathIcon = "Resources/angel.png";
-                    flow_chat.Controls.Add(new uc_icon_user(userInfo.Ava, pathIcon,time));
+
                     break;
                 case 2:
                     pathIcon = "Resources/happy (1).png";
-                    flow_chat.Controls.Add(new uc_icon_user(userInfo.Ava, pathIcon, time));
                     break;
                 case 3:
                     pathIcon = "Resources/laughing (1).png";
-                    flow_chat.Controls.Add(new uc_icon_user(userInfo.Ava, pathIcon, time));
                     break;
                 case 4:
                     pathIcon = "Resources/savoring-food.png";
-                    flow_chat.Controls.Add(new uc_icon_user(userInfo.Ava, pathIcon, time));
                     break;
 
                 case 5:
                     pathIcon = "Resources/clown.png";
-                    flow_chat.Controls.Add(new uc_icon_user(userInfo.Ava, pathIcon, time));
                     break;
 
                 case 6:
                     pathIcon = "Resources/sad.png";
-                    flow_chat.Controls.Add(new uc_icon_user(userInfo.Ava, pathIcon, time));
                     break;
 
                 case 7:
                     pathIcon = "Resources/crying.png";
-                    flow_chat.Controls.Add(new uc_icon_user(userInfo.Ava, pathIcon, time));
                     break;
 
                 case 8:
                     pathIcon = "Resources/sad (1).png";
-                    flow_chat.Controls.Add(new uc_icon_user(userInfo.Ava, pathIcon, time));
                     break;
 
                 case 9:
                     pathIcon = "Resources/scared.png";
-                    flow_chat.Controls.Add(new uc_icon_user(userInfo.Ava, pathIcon, time));
                     break;
 
                 case 10:
                     pathIcon = "Resources/dead.png";
-                    flow_chat.Controls.Add(new uc_icon_user(userInfo.Ava, pathIcon, time));
                     break;
 
                 case 11:
                     pathIcon = "Resources/shocked.png";
-                    flow_chat.Controls.Add(new uc_icon_user(userInfo.Ava, pathIcon, time));
                     break;
-                
+
                 case 12:
                     pathIcon = "Resources/angry.png";
-                    flow_chat.Controls.Add(new uc_icon_user(userInfo.Ava, pathIcon, time));
                     break;
-                
+
                 case 13:
                     pathIcon = "Resources/neutral.png";
-                    flow_chat.Controls.Add(new uc_icon_user(userInfo.Ava, pathIcon, time));
                     break;
-                
+
                 case 14:
                     pathIcon = "Resources/cry.png";
-                    flow_chat.Controls.Add(new uc_icon_user(userInfo.Ava, pathIcon, time));
                     break;
 
                 case 15:
                     pathIcon = "Resources/devil.png";
-                    flow_chat.Controls.Add(new uc_icon_user(userInfo.Ava, pathIcon, time));
                     break;
 
             }
+            flow_chat.Controls.Add(new uc_icon_user(userInfo.Ava, pathIcon, time));
+            socket.Send(new SocketData((int)SocketCommand.SEND_ICON, pathIcon, time));
+            Listen();
         }
     }
 }
