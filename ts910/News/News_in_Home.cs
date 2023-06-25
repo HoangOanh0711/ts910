@@ -15,10 +15,13 @@ namespace ts910.News
     {
         public event EventHandler Click;
 
-        public News_in_Home()
+        UserInfo userInfo;
+
+        public News_in_Home(UserInfo userInfo)
         {
             InitializeComponent();
             setSize();
+            this.userInfo = userInfo;
         }
 
         private void setSize()
@@ -38,9 +41,9 @@ namespace ts910.News
 
         private void label2_Click(object sender, EventArgs e)
         {
-            this.ParentForm?.Hide();
-            Click?.Invoke(this, e);
-            News_ListView new_ListView = new News_ListView();
+            //this.ParentForm?.Hide();
+            //Click?.Invoke(this, e);
+            News_ListView new_ListView = new News_ListView(userInfo);
             new_ListView.ShowDialog();
         }
     }

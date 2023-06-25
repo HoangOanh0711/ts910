@@ -35,6 +35,7 @@ namespace ts910
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 10, 10));
 
             setSize();
+            
 
             drawer.Visible = false;
 
@@ -57,6 +58,9 @@ namespace ts910
             guna2Panel1.Location = new Point(37, 274);
             guna2Panel1.Size = new Size(454, 550);
 
+            News_in_Home news_in_Home1 = new News_in_Home(userInfo);
+
+            this.Controls.Add(news_in_Home1);
             news_in_Home1.Location = new Point(36, 870);
             news_in_Home1.Size = new Size(463, 548);
 
@@ -159,7 +163,7 @@ namespace ts910
 
             }
 
-            Result result = new Result(lb_sum.Text, cbx_type.SelectedIndex, cbx_specialSubject.SelectedIndex);
+            Result result = new Result(lb_sum.Text, cbx_type.SelectedIndex, cbx_specialSubject.SelectedIndex, userInfo);
             result.Show();
         }
 
@@ -216,7 +220,7 @@ namespace ts910
         private void panel_tinTuc_Click(object sender, EventArgs e)
         {
             this.Hide();
-            News_ListView news_ListView = new News_ListView();
+            News_ListView news_ListView = new News_ListView(userInfo);
             news_ListView.ShowDialog();
             this.Close();
         }
@@ -227,6 +231,11 @@ namespace ts910
             doi_thong_tin doi_thong_tin = new doi_thong_tin(userInfo);
             doi_thong_tin.ShowDialog();
             this.Close();
+        }
+
+        private void news_in_Home1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -92,5 +92,11 @@ namespace ts910
                 MessageBox.Show("Tài khoản không tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            quen_mat_khau_sdt quen_Mat_Khau_Sdt = new quen_mat_khau_sdt();
+            quen_Mat_Khau_Sdt.Show();
+        }
     }
 }
