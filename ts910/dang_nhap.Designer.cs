@@ -208,6 +208,7 @@
             this.Name = "dang_nhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "dang_nhap";
+            this.Load += new System.EventHandler(this.dang_nhap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

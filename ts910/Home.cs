@@ -30,7 +30,7 @@ namespace ts910
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 10, 10));
-
+            this.Size = new Size(526, 840);
             header1.Location = new Point(0, 0);
             header1.Size = new Size(527, 96);
 
@@ -39,7 +39,7 @@ namespace ts910
 
             guna2Panel1.Location = new Point(37, 274);
             guna2Panel1.Size = new Size(454, 550);
-
+   
             news_in_Home1.Location = new Point(36, 870);
             news_in_Home1.Size = new Size(463, 548);
 

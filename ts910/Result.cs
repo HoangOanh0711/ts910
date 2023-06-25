@@ -92,6 +92,13 @@ namespace ts910
             });
         }
 
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            History history = new History();
+            history.Show();
+            this.Close();
+        }
+
         private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
         {
 
