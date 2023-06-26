@@ -25,13 +25,14 @@ namespace ts910
             int nWidthEllipse, // height of ellipse
             int nHeightEllipse // width of ellipse
         );
-        String email;
-        public quen_mat_khau(String email)
+        String email, otp;
+        public quen_mat_khau(String email, String otp)
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
             this.email = email;
+            this.otp = otp;
         }
 
         private void btn_xacnhan_Click(object sender, EventArgs e)
@@ -42,37 +43,44 @@ namespace ts910
             }
             else
             {
-                if (tb_mk.Text == tb_mkMoi.Text)
+                if (otp.Equals(tb_maXacNhan.Text))
                 {
-                    Excel excel = new Excel();
-                    Workbook wb = excel.Workbooks.Open(Program.filePathExcel);
-                    Worksheet ws = wb.Worksheets["Tài khoản"];
-
-
-                    for (int row = 2; row <= ws.UsedRange.Rows.Count; ++row)//đọc row hiện có trong Excel
+                    if (tb_mk.Text == tb_mkMoi.Text)
                     {
-                        Range cell = ws.Range[$"C{row}"];
-                        string cellValue = cell.Text;
+                        Excel excel = new Excel();
+                        Workbook wb = excel.Workbooks.Open(Program.filePathExcel);
+                        Worksheet ws = wb.Worksheets["Tài khoản"];
 
-                        if (email.Equals(cellValue))
+
+                        for (int row = 2; row <= ws.UsedRange.Rows.Count; ++row)//đọc row hiện có trong Excel
                         {
-                            Range cellMK = ws.Range[$"G{row}"];
-                            cellMK.Value = tb_mk.Text;
-                            wb.Save();
-                            wb.Close();
-                            MessageBox.Show("Đổi mật khẩu thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            Range cell = ws.Range[$"C{row}"];
+                            string cellValue = cell.Text;
 
-                            this.Hide();
-                            dang_nhap dangnhap = new dang_nhap();
-                            dangnhap.ShowDialog();
-                            this.Close();
+                            if (email.Equals(cellValue))
+                            {
+                                Range cellMK = ws.Range[$"G{row}"];
+                                cellMK.Value = tb_mk.Text;
+                                wb.Save();
+                                wb.Close();
+                                MessageBox.Show("Đổi mật khẩu thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                                this.Hide();
+                                dang_nhap dangnhap = new dang_nhap();
+                                dangnhap.ShowDialog();
+                                this.Close();
+                            }
                         }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Nhập lại mật khẩu không trùng khớp", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Nhập lại mật khẩu không trùng khớp", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
+                    MessageBox.Show("OTP sai");
                 }
             }
         }
