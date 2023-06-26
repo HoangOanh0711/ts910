@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -27,6 +28,7 @@ namespace ts910
         );
 
         UserInfo userInfo;
+        float sum;
 
         public Home(UserInfo userInfo)
         {
@@ -105,12 +107,12 @@ namespace ts910
             }
         }
 
+        
         private void btn_submit_Click(object sender, EventArgs e)
         {
             float math = float.Parse(tb_math.Text);
-            float liter = float.Parse(tb_liter.Text);
             float eng = float.Parse(tb_english.Text);
-            float sum;
+            float liter = float.Parse(tb_liter.Text);
 
 
             if (cbx_type.SelectedIndex == 0) {
@@ -122,7 +124,6 @@ namespace ts910
                 else
                 {
                     sum = math + liter + eng;
-                    lb_sum.Text = Convert.ToString(sum);
                 }
             }
             else if (cbx_type.SelectedIndex == 1)
@@ -133,7 +134,6 @@ namespace ts910
                     {
                         float special = float.Parse(tb_specialSubject.Text);
                         sum = math + liter + eng + special * 2;
-                        lb_sum.Text = Convert.ToString(sum);
                     }
                     else
                     {
@@ -153,7 +153,6 @@ namespace ts910
                 {
                     float special = float.Parse(tb_specialSubject.Text);
                     sum = math + liter + eng + special;
-                    lb_sum.Text = Convert.ToString(sum);
                 }
                 else
                 {
@@ -163,7 +162,7 @@ namespace ts910
 
             }
 
-            Result result = new Result(lb_sum.Text, cbx_type.SelectedIndex, cbx_specialSubject.SelectedIndex, userInfo);
+            Result result = new Result(sum.ToString(), cbx_type.SelectedIndex, cbx_specialSubject.SelectedIndex, userInfo);
             result.Show();
         }
 
@@ -236,6 +235,11 @@ namespace ts910
         private void news_in_Home1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://gis.hcm.edu.vn/");
         }
     }
 }

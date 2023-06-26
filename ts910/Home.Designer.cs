@@ -46,8 +46,6 @@ namespace ts910
             this.label3 = new System.Windows.Forms.Label();
             this.cbx_type = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lb_sum = new System.Windows.Forms.Label();
             this.drawer = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.btn_close = new Guna.UI2.WinForms.Guna2CirclePictureBox();
@@ -58,7 +56,6 @@ namespace ts910
             this.label12 = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox6 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox5 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.panel_tuvan = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
@@ -73,6 +70,7 @@ namespace ts910
             this.pb_ava = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timerDrawer = new System.Windows.Forms.Timer(this.components);
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.contact1 = new ts910.Contact();
             this.header1 = new ts910.Header();
             this.footer2 = new ts910.Footer();
@@ -120,7 +118,7 @@ namespace ts910
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
             this.guna2Panel1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Panel1.Location = new System.Drawing.Point(-102, 274);
+            this.guna2Panel1.Location = new System.Drawing.Point(-120, 274);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Padding = new System.Windows.Forms.Padding(15, 16, 15, 16);
@@ -390,28 +388,6 @@ namespace ts910
             this.label1.TabIndex = 0;
             this.label1.Text = "Loại hình: ";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(43, 836);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(121, 22);
-            this.label2.TabIndex = 36;
-            this.label2.Text = "Tổng điểm: ";
-            // 
-            // lb_sum
-            // 
-            this.lb_sum.AutoSize = true;
-            this.lb_sum.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_sum.Location = new System.Drawing.Point(168, 836);
-            this.lb_sum.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lb_sum.Name = "lb_sum";
-            this.lb_sum.Size = new System.Drawing.Size(21, 22);
-            this.lb_sum.TabIndex = 37;
-            this.lb_sum.Text = "0";
-            // 
             // drawer
             // 
             this.drawer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
@@ -528,23 +504,12 @@ namespace ts910
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.label11);
+            this.panel4.Controls.Add(this.linkLabel1);
             this.panel4.Controls.Add(this.guna2CirclePictureBox5);
             this.panel4.Location = new System.Drawing.Point(10, 370);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(219, 48);
             this.panel4.TabIndex = 4;
-            // 
-            // label11
-            // 
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(57, 2);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(159, 45);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "Bản đồ GIS";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // guna2CirclePictureBox5
             // 
@@ -694,7 +659,7 @@ namespace ts910
             this.pictureBox1.Location = new System.Drawing.Point(0, 97);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(360, 177);
+            this.pictureBox1.Size = new System.Drawing.Size(326, 177);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -703,6 +668,21 @@ namespace ts910
             // 
             this.timerDrawer.Interval = 1;
             this.timerDrawer.Tick += new System.EventHandler(this.timerDrawer_Tick);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabel1.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel1.Location = new System.Drawing.Point(61, 0);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(158, 48);
+            this.linkLabel1.TabIndex = 1;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Bản đồ GIS";
+            this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.Black;
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // contact1
             // 
@@ -721,7 +701,7 @@ namespace ts910
             this.header1.Location = new System.Drawing.Point(0, 0);
             this.header1.Margin = new System.Windows.Forms.Padding(2);
             this.header1.Name = "header1";
-            this.header1.Size = new System.Drawing.Size(360, 96);
+            this.header1.Size = new System.Drawing.Size(326, 96);
             this.header1.TabIndex = 13;
             this.header1.Click += new System.EventHandler(this.header1_Click);
             // 
@@ -734,7 +714,7 @@ namespace ts910
             this.footer2.Margin = new System.Windows.Forms.Padding(1);
             this.footer2.Name = "footer2";
             this.footer2.Padding = new System.Windows.Forms.Padding(15, 32, 15, 32);
-            this.footer2.Size = new System.Drawing.Size(363, 400);
+            this.footer2.Size = new System.Drawing.Size(329, 400);
             this.footer2.TabIndex = 8;
             // 
             // footer1
@@ -742,7 +722,7 @@ namespace ts910
             this.footer1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.footer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(63)))));
-            this.footer1.Location = new System.Drawing.Point(19, 32086);
+            this.footer1.Location = new System.Drawing.Point(19, 32659);
             this.footer1.Margin = new System.Windows.Forms.Padding(1);
             this.footer1.Name = "footer1";
             this.footer1.Padding = new System.Windows.Forms.Padding(15, 32, 15, 32);
@@ -758,8 +738,6 @@ namespace ts910
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(186)))), ((int)(((byte)(241)))));
             this.ClientSize = new System.Drawing.Size(580, 840);
             this.Controls.Add(this.drawer);
-            this.Controls.Add(this.lb_sum);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.contact1);
             this.Controls.Add(this.header1);
             this.Controls.Add(this.guna2Panel1);
@@ -792,7 +770,6 @@ namespace ts910
             ((System.ComponentModel.ISupportInitialize)(this.pb_ava)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -817,8 +794,6 @@ namespace ts910
         private Header header1;
         private Guna.UI2.WinForms.Guna2GradientButton btn_submit;
         private Contact contact1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lb_sum;
         private System.Windows.Forms.FlowLayoutPanel drawer;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private System.Windows.Forms.Label label7;
@@ -832,7 +807,6 @@ namespace ts910
         private System.Windows.Forms.Label label12;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox6;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label11;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox5;
         private System.Windows.Forms.Panel panel_tuvan;
         private System.Windows.Forms.Label label10;
@@ -843,6 +817,7 @@ namespace ts910
         private System.Windows.Forms.Panel panel_Home;
         private Guna.UI2.WinForms.Guna2CirclePictureBox btn_close;
         private System.Windows.Forms.Timer timerDrawer;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
 

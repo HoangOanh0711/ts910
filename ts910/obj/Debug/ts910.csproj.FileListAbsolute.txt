@@ -173,3 +173,5 @@ D:\Project\c#\ts910\ts910\obj\Debug\ts910.News.uc_card_new2.resources
 D:\Project\c#\ts910\ts910\obj\Debug\ts910.News.uc_card_new3.resources
 D:\Project\c#\ts910\ts910\obj\Debug\ts910.quen_mat_khau.resources
 D:\Project\c#\ts910\ts910\obj\Debug\ts910.quen_mat_khau_sdt.resources
+E:\STUDY\C#\LT\ts910\ts910\obj\Debug\ts910.ChatBox.uc_icon_admin.resources
+E:\STUDY\C#\LT\ts910\ts910\obj\Debug\ts910.ChatBox.uc_icon_user.resources
